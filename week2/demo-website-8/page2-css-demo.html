@@ -13,6 +13,35 @@
         h2 {
             background-color: lightblue;
         }
+
+        /*
+        cascade - top down 
+        css defined after current css will be overridden 
+        combines pervious css to cueernt css 
+        */
+        p {
+            text-align: center;
+            color:#abcdef
+        }
+
+        p {
+            color:blue
+        }
+
+        span {
+            font-family: 'Courier New', Courier, monospace; 
+            color:green
+        }
+        
+        label {
+            color:blue
+        }
+
+        /* select multiple elements */
+        ul, ol {
+            list-style-type: none;
+        }
+
     </style>
 </head>
 <body>
@@ -53,30 +82,32 @@
             #abcdef
 
             -->
-            <p style="text-align: center;color:#abcdef">
+            <p>
                 Introduction to css 
             </p>
             
             <p>center page</p>
 
-            <p style="color: blue;">
+            <span>
                 style sentence 1 - font, color 
-            </p>
+            </span>
 
-            <p style="font-family: 'Courier New', Courier, monospace; color:green">
+            <p></p>
+            <label>
                 style sentence 2 - spacing , border, padding 
-            </p>
+            </label>
         </section>
 
+        <p></p>
         <span>Item list</span>
 
-        <ul style="list-style-type: none;">
+        <ul>
             <li>item 1</li>
             <li>item 2</li>
             <li>item 3</li>
         </ul>
 
-        <ol style="list-style-type: none;">
+        <ol>
             <li>item a</li>
             <li>item b</li>
             <li>item c</li>
