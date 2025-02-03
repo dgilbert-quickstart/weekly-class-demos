@@ -1,0 +1,56 @@
+/*
+css comment 
+page level style
+select element then add style(s)
+*/
+
+/*
+generic style name that can be used in any element 
+add named element to a element using class="header-style-1"
+*/
+.header-style-1 {
+    background-color: lightblue;
+}
+
+/*
+named style that applys to only css element 
+this elemen can ne be applied to other element - only h2 
+add named element to a element using class="header-style-1"
+*/
+h2.header-style-2 {
+    background-color: lightgreen;
+}
+
+/*
+named #id styles 
+adding multinple named styles ie: class to elements 
+*/
+
+/*
+cascade - top down 
+css defined after current css will be overridden 
+combines pervious css to cueernt css 
+*/
+p {
+    text-align: center;
+    color:#abcdef
+}
+
+p {
+    color:blue
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace; 
+    color:green
+}
+
+label {
+    color:blue
+}
+
+/* select multiple elements */
+ul, ol {
+    list-style-type: none;
+}
+
