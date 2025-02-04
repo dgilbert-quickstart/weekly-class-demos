@@ -5,6 +5,13 @@ select element then add style(s)
 */
 
 /*
+placeholder-named-style
+*/
+.container-1 {
+
+}
+
+/*
 generic style name that can be used in any element 
 add named element to a element using class="header-style-1"
 */
@@ -31,26 +38,26 @@ cascade - top down
 css defined after current css will be overridden 
 combines pervious css to cueernt css 
 */
-p {
+p.para-style-1 {
     text-align: center;
     color:#abcdef
 }
 
-p {
+p.para-style-2 {
     color:blue
 }
 
-span {
+span.span-style-1 {
     font-family: 'Courier New', Courier, monospace; 
     color:green
 }
 
-label {
+label.label-style-1 {
     color:blue
 }
 
 /* select multiple elements */
-ul, ol {
+ul,ol .list-style-1 {
     list-style-type: none;
 }
 
