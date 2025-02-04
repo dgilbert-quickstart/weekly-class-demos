@@ -57,7 +57,42 @@ label.label-style-1 {
 }
 
 /* select multiple elements */
-ul,ol .list-style-1 {
+.list-style-1 {
     list-style-type: none;
 }
 
+/*
+cascade or merger override extend 
+*/
+ul .list-style-1 {
+
+}
+
+/*
+cascade or merger override extend 
+*/
+ol .list-style-1 {
+
+}
+
+.nav-space-style-1 {
+    padding: 10px;
+}
+
+.container-space-style-1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
