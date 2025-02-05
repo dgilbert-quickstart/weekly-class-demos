@@ -30,7 +30,13 @@
               </header>
 
               <div>
-                <form>
+                <!--
+                action = server url to sedn data to 
+                method = how to send the form data, get or post 
+                 - get - send form data in browser address bar , data size limit of 256k 
+                 - default = post - send form data in memory , unlimited data size
+                -->
+                <form action="/" method="post">
                     <span>* &nbsp; first name:</span> <input type="text" placeholder="*first name required" maxlength="25" required> <br>
                     <label>last name:</label> <input type="text"  maxlength="25"> <br>
                     <label>* &nbsp; email:</label> <input type="email" placeholder="*email required"  maxlength="100" required> <br>
