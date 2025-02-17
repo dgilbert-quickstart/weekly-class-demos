@@ -18,9 +18,14 @@ function demo_f1(){
     alert("# demo function 1")
 }
 
-function demo_f2(){
+function demo_f2() {
     console.log("# demo function 2")
     alert("# demo function 2")
+}
+
+function page_load() 
+{
+    console.log("# page_load:js demo page 3")
 }
 
 //call function 
