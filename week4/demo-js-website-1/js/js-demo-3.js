@@ -32,6 +32,6 @@ function page_load()
 }
 
 //call function 
-//best practice - call a function in a event 
+//best practice - call a function in a event or another function
 //display_info_1();
 
