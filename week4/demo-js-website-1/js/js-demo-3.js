@@ -13,5 +13,15 @@ function display_info_1()
     //alert("# Js Demo 3")
 }
 
+function demo_f1(){
+    console.log("# demo function 1")
+    alert("# demo function 1")
+}
+
+function demo_f2(){
+    console.log("# demo function 2")
+    alert("# demo function 2")
+}
+
 //call function 
 display_info_1();
