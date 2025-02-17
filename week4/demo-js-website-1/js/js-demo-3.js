@@ -9,8 +9,8 @@ line comment
 //define function 
 function display_info_1()
 {
-    console.log("# Js Demo 2");
-    //alert("# Js Demo 2")
+    console.log("# Js Demo 3");
+    //alert("# Js Demo 3")
 }
 
 //call function 
