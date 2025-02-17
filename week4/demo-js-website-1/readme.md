@@ -6,10 +6,12 @@
 # Website Technology 
 - html 
 - css 
+- scss
 - bootstrap 
+- javascript 
 
 # github code repositoty
-- https://github.com/dgilbert-quickstart/weekly-class-demos.git
+- https://github.com/
 
 # github website url 
 - htpp://github.com/
