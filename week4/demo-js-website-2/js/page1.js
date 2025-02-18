@@ -235,3 +235,26 @@ function demo_variables4(){
     
 }
 
+function demo_variables_numbers(){
+    
+    //const - readonly, fixed 
+    const _function_name = "# page1: demo_variables_numbers";
+
+    //var - es4
+    var num1 = 5;  //integer 
+
+    //let - e5+
+    let num2 = 15.1; //floating point number including decimal 
+
+    //defining and assigning values in 1 statement
+    const total = (num1 + num2)
+
+    console.log(_function_name);
+
+    //concatination 
+    console("total: " + total)
+    console("total: ", total)
+
+}
+
+
