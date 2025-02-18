@@ -6,7 +6,7 @@ line comment
 */
 
 function display_info1(){
-    console.log("# page1 - display info")  
+    console.log("# page1 - display info"); 
 }
 
 function page_load(){
@@ -15,7 +15,7 @@ function page_load(){
 }
 
 function demo_link1() {
-    console.log("# page1 - link1")
+    console.log("# page1 - link1");
     alert("# page1 - link1")
 }
 
