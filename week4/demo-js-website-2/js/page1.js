@@ -43,7 +43,7 @@ function demo_variables1(){
     var1 = "intro to javascrpt";  //data-type - string
     var_2 = "6"; //data-type - string
     var2 = 6  //data-type - number integer
-    var3 = 6.0  //data-type - number floating point including decimal point 
+    var3 = 6.1  //data-type - number floating point including decimal point 
     var4 = true //data-type - boolean - true/false
 
     //other data types - boolean = true/false, object
@@ -54,6 +54,19 @@ function demo_variables1(){
 
     //use variable 
     console.log(var1)
+
+    //combine string variables = concatination 
+    console.log(var1 + var_2)
+
+    //combine string and number  = concatination 
+    console.log(var1 + var2)
+
+    //combine string and number  = concatination 
+    console.log(var1 + " " + var2)
+
+    //combine varables  = concatination 
+    console.log(var1,var2,var3)
+
 }
 
 
