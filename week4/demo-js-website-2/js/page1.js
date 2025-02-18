@@ -67,6 +67,12 @@ function demo_variables1(){
     //combine varables  = concatination 
     console.log(var1,var2,var3)
 
+    //update varible 
+    var3 = 6.3 //data type = float, can update to any other data type 
+
+    //combine varables  = concatination 
+    console.log(var1,var2,var3)
+    
 }
 
 
