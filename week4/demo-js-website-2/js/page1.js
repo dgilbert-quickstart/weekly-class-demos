@@ -252,8 +252,8 @@ function demo_variables_numbers(){
     console.log(_function_name);
 
     //concatination 
-    console("total: " + total)
-    console("total: ", total)
+    console.log("total: " + total)
+    console.log("total: ", total)
 
 }
 
