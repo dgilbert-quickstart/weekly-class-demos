@@ -280,7 +280,7 @@ function demo_variables_strings(){
     console.log("length: ", _function_name.length)
     console.log(str1)
     console.log(str2)
-    console.log(str2.trim())
+    console.log(str2.trim()) 
 
 }
 
