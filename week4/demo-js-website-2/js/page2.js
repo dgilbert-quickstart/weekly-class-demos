@@ -16,6 +16,8 @@ function lnk_dom_demo_1()
 
     let msgText = "<b># Introduction to js DOM</b>"
 
+    console.log(msgText);
+    
     //document = global javascript object ie: DOM
     //getElementById = select html element by  id 
     //innerText = update text
