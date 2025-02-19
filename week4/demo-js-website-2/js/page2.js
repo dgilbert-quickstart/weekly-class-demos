@@ -86,6 +86,8 @@ function lnk_dom_demo_3()
         return false //cancel mouse click and exit function 
     }
 
+    //# check if txtsearch field is empty
+
     //continue code if no error
     
     //# display seach text info in div
