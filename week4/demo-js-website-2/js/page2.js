@@ -67,12 +67,34 @@ function lnk_dom_demo_3()
 
     //# select search text element
     //# select div element
-    const txtSearch = document.getElementById("txtsearch"); //HTMLElement object 
-    const eleDivInfo = document.getElementById("div-display-info"); //HTMLElement object 
+    
+    //const txtSearch = document.getElementById("txtSearch"); //HTMLElement object or null
+    const txtSearch = document.getElementById("txtsearch"); //HTMLElement object or null
+
+    const eleDivInfo = document.getElementById("div-display-info"); //HTMLElement object or null
 
     //# check if text and div element is null
-    //# display seach text info in div
+    if (txtSearch == null) {
 
+        console.log("# txtsearch field not found")
+        return false //cancel mouse click and exit function 
+    }
+
+    if (eleDivInfo == null) {
+
+        console.log("# div-display-info not found")
+        return false //cancel mouse click and exit function 
+    }
+
+    //continue code if no error
+    
+    //# display seach text info in div
+    
+    //txtSearch.value = retrieve text entered in text field    
+    msgText = "txtsearch: " + txtSearch.value;
+
+    //eleDivInfo.innerHTML = msgText;
+    eleDivInfo.innerText = msgText;
 }
 
 
