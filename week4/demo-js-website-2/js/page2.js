@@ -7,6 +7,6 @@ comment
 
 function page_load(){
 
-    coneole.log("# page2: page_load");
+    console.log("# page2: page_load");
 }
 
