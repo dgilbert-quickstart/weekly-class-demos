@@ -59,4 +59,17 @@ function lnk_dom_demo_2()
 
 }
 
+function lnk_dom_demo_3()
+{
+    const msgText = "# page2 : link_dom_demo_3"
+
+    console.log(msgText)
+
+    //# select search text element
+    //# select div element
+    //# check if text and div element is null
+    //# display seach text info in div
+
+}
+
 
