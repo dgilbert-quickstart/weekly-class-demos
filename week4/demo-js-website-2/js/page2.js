@@ -20,7 +20,8 @@ function lnk_dom_demo_1()
     //getElementById = select html element by  id 
     //innerText = update text
     //innerHTML = update html ie: formatting
-    document.getElementById("div-display-info").innerText = msgText;
+    //document.getElementById("div-display-info").innerText = msgText;
+    document.getElementById("div-display-info").innerHTML = msgText;
 
 }
 
