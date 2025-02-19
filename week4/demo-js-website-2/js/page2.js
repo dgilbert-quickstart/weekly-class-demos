@@ -87,6 +87,17 @@ function lnk_dom_demo_3()
     }
 
     //# check if txtsearch field is empty
+    //if (txtSearch.value == ""){
+    if (txtSearch.value.trim().length == 0){
+
+        msgText = "# please enter a text to search";
+
+        console.log(msgText)
+        
+        eleDivInfo.innerText = msgText;
+
+        return false //cancel mouse click and exit function 
+    }
 
     //continue code if no error
     
@@ -97,6 +108,9 @@ function lnk_dom_demo_3()
 
     //eleDivInfo.innerHTML = msgText;
     eleDivInfo.innerText = msgText;
+
+    //clear text field
+    txtSearch.value = "";
 }
 
 
