@@ -14,10 +14,12 @@ function lnk_dom_demo_1()
 {
     //Js DOM- select an html element in the page the manipluate elementie: update element text 
 
-    let msgText = "# Introduction to js DOM"
+    let msgText = "<b># Introduction to js DOM</b>"
 
     //document = global javascript object ie: DOM
     //getElementById = select html element by  id 
+    //innerText = update text
+    //innerHTML = update html ie: formatting
     document.getElementById("div-display-info").innerText = msgText;
 
 }
