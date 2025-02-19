@@ -28,3 +28,35 @@ function lnk_dom_demo_1()
 }
 
 
+function lnk_dom_demo_2()
+{
+    let msgText = "<b># Introduction to js DOM #2</b>" //datatype - string 
+
+    console.log(msgText);
+
+    //# variable data tyle object HTMLElement object - has different structure then string, boolean, number
+    //# learn more about different object types ie: w3schools or online references 
+    //# ie: HTMLElement object - differnet structires 
+    //# Json object  -- different structures 
+    
+    //const eleDivInfo = document.getElementById("Div-display-info"); //data type = HTMLElement  or null
+    const eleDivInfo = document.getElementById("div-display-info"); //data type = HTMLElement  or null
+    
+    //# if statement - make a decison in code - true/false
+    //# if evaluates two values, if true call true code else if false call false code 
+    //# if (locical expression) = if a == b or if a != b or if a > b etc..
+    if(eleDivInfo == null){
+        //true code 
+        //# div-display-info not found ie: null
+        console.log("# div-display-info not found")
+    }
+    else
+    {
+        //false code 
+        //# div-display-info not found ie: null
+        eleDivInfo.innerText = msgText;
+    }
+
+}
+
+
