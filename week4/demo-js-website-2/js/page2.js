@@ -165,8 +165,26 @@ function lnkClear(){
     console.log(msgText.toUpperCase());
 
     //select text field and display div using document.getElementById
-    //validate if text field and display div is not null, if so and exit function
-    //clear text field
-    //set keyboard focus to the text field
+    
+    //const txtsearch = document.getElementById("txtSearch"); //HTMLElement or null
+    const txtsearch = document.getElementById("txtsearch");  //HTMLElement or null
+    const divdisplayinfo = document.getElementById("div-display-info");  //HTMLElement or null
+    
+    //validate if text field and display div is null, if so and exit function
+    //-- undefined = field was not definded or created
+    //-- null - field was defined and does not have a value 
+    //-- undefined variable is a variable that was not ceeated
+    
+    //const var1; //null variable - defined but does not have any value 
+    
+    //if(txtsearch == null | txtsearch1 == undefined) {
+    if(txtsearch == null | txtsearch == undefined) {
+        msgText = "# txtsearch is null"
+        return false;
+    }
+
+    txtsearch.value = ""; //clear text field
+    txtsearch.focus(); //set keyboard focus to the text field
+    
 }
 
