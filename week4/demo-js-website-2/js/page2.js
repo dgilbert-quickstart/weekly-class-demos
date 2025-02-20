@@ -113,4 +113,26 @@ function lnk_dom_demo_3()
     txtSearch.value = "";
 }
 
+function btnSearch(){
+
+    let msgText = "# page2: btnSearch"
+    console.log(msgText.toUpperCase());
+
+    //select text field and display div using document.getElementById
+    //validate if text field and display div is not null, if so and exit function
+    //validate if text field is empty, if so exit function
+    //display search text in display div
+
+}
+
+function lnkClear(){
+    
+    let msgText = "# page2: lnkClear"
+    console.log(msgText.toUpperCase());
+
+    //select text field and display div using document.getElementById
+    //validate if text field and display div is not null, if so and exit function
+    //clear text field
+    //set keyboard focus to the text field
+}
 
