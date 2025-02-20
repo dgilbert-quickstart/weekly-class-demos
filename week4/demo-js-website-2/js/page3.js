@@ -8,7 +8,7 @@ function page_load(){
 
 function btnSubmit(){
 
-    const msgText = "# page3: btnSubmit";
+    let msgText = "# page3: btnSubmit";
 
     console.log(msgText.toUpperCase())
   
@@ -17,6 +17,14 @@ function btnSubmit(){
             1- select div-display-info using document.getElementById
             2- validate if div-display-info is not null or undefined, if so, display element not found message and exit function
     */
+
+   const divdisplayinfo = document.getElementById("divdisplayinfo");
+
+   if(divdisplayinfo == null | divdisplayinfo == undefined) {
+     msgText = "# divdisplayinfo not null/undefined"
+     console.log(msgText)    
+     return false; //prevent form submit
+   }
 
     /*
         firtname:
