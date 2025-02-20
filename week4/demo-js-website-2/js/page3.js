@@ -26,6 +26,8 @@ function btnSubmit(){
      return false; //prevent form submit
    }
 
+   console.log("-- validate firstname --")
+   
     /*
         firtname:
             1- select firstname field using document.getElementById
