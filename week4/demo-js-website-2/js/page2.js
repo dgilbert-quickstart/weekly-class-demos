@@ -141,14 +141,15 @@ function btnSearch(){
     //if(txtsearch == null & divdisplayinfo == null) -> or
 
     //validate if text field is empty, if so exit function
-    if(txtsearch.value.trim().length() == 0) {
+    if(txtsearch.value.trim().length == 0) {
         msgText = "# please enter a valid search text"
         console.log(msgText)
+        divdisplayinfo.innerText = msgText
         return false //stop onclick and exit function 
     }
 
     //display search text in display div
-    msgText = "# searching for: " + txtsearch
+    msgText = "# searching for: " + txtsearch.value
 
     //divdisplayinfo.innerHTML = "<br>" + msgText + "</b>"
     divdisplayinfo.innerText = msgText;
