@@ -6,3 +6,24 @@ function page_load(){
 
 }
 
+function btnSubmit(){
+
+    const msgText = "# page3: btnSubmit";
+
+    console.log(msgText.toUpperCase())
+    
+    //prevent form post
+    return false
+
+}
+
+function btnClear(){
+
+    const msgText = "# page3: btnClear";
+
+    console.log(msgText.toUpperCase())
+
+}
+
+
+
