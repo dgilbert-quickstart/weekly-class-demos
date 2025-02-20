@@ -38,7 +38,7 @@ function btnSubmit(){
    const txtfirstname = document.getElementById("txtfirstname");
 
    if(txtfirstname == null | txtfirstname == undefined) {
-     msgText = "# txtfirstname not null/undefined"
+     msgText = "# txtfirstname not found"
      console.log(msgText)    
      return false; //prevent form submit/ext function 
    }
