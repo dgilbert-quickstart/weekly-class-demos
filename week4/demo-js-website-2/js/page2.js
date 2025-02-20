@@ -115,11 +115,31 @@ function lnk_dom_demo_3()
 
 function btnSearch(){
 
-    let msgText = "# page2: btnSearch"
-    console.log(msgText.toUpperCase());
+    let msgText = "# page2: btnSearch" //string 
+    console.log(msgText.toUpperCase());  
 
     //select text field and display div using document.getElementById
+    const txtsearch = document.getElementById("txtsearch"); //HTMLElement or null
+    const divdisplayinfo = document.getElementById("div-display-info"); //HTMLElement or null
+
     //validate if text field and display div is not null, if so and exit function
+    if(txtsearch == null){
+        msgText = "# txtsearch field not found"
+        console.log(msgText)
+        return false
+    }
+
+    if(divdisplayinfo == null){
+        msgText = "# divdisplayinfo field not found"
+        console.log(msgText)
+        return false
+    }
+
+    //######## other if condition examples ####
+    //if(txtsearch != null) -> not null 
+    //if(txtsearch == null ! divdisplayinfo == null)  -> or 
+    //if(txtsearch == null & divdisplayinfo == null) -> or
+
     //validate if text field is empty, if so exit function
     //display search text in display div
 
