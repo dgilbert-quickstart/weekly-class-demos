@@ -185,6 +185,8 @@ function lnkClear(){
 
     txtsearch.value = ""; //clear text field
     txtsearch.focus(); //set keyboard focus to the text field
+
+    //divdisplayinfo.innerText = ""; //clear div content
     
 }
 
