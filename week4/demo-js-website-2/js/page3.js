@@ -23,11 +23,11 @@ function btnSubmit(){
    if(divdisplayinfo == null | divdisplayinfo == undefined) {
      msgText = "# divdisplayinfo not null/undefined"
      console.log(msgText)    
-     return false; //prevent form submit
+     return false; //prevent form submit/ext function 
    }
 
    console.log("-- validate firstname --")
-   
+
     /*
         firtname:
             1- select firstname field using document.getElementById
