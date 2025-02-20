@@ -126,13 +126,13 @@ function btnSearch(){
     if(txtsearch == null){
         msgText = "# txtsearch field not found"
         console.log(msgText)
-        return false
+        return false //stop onclick and exit function 
     }
 
     if(divdisplayinfo == null){
         msgText = "# divdisplayinfo field not found"
         console.log(msgText)
-        return false
+        return false //stop onclick and exit function 
     }
 
     //######## other if condition examples ####
@@ -141,7 +141,20 @@ function btnSearch(){
     //if(txtsearch == null & divdisplayinfo == null) -> or
 
     //validate if text field is empty, if so exit function
+    if(txtsearch.value.trim().length() == 0) {
+        msgText = "# please enter a valid search text"
+        console.log(msgText)
+        return false //stop onclick and exit function 
+    }
+
     //display search text in display div
+    msgText = "# searching for: " + txtsearch
+
+    //divdisplayinfo.innerHTML = "<br>" + msgText + "</b>"
+    divdisplayinfo.innerText = msgText;
+
+    txtsearch.value = ""; //clear text field
+    txtsearch.focus(); //move keyboard cursor to text field
 
 }
 
