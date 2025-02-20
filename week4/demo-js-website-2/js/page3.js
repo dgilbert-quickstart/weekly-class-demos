@@ -66,7 +66,7 @@ function btnSubmit(){
         txtfirstname.focus();
     */
 
-    //prevent form post
+    //prevent form post/reload
     return false
 
 }
