@@ -21,7 +21,7 @@ function btnSubmit(){
    const divdisplayinfo = document.getElementById("divdisplayinfo");
 
    if(divdisplayinfo == null | divdisplayinfo == undefined) {
-     msgText = "# divdisplayinfo not null/undefined"
+     msgText = "# divdisplayinfo not found"
      console.log(msgText)    
      return false; //prevent form submit/ext function 
    }
@@ -42,7 +42,6 @@ function btnSubmit(){
      console.log(msgText)    
      return false; //prevent form submit/ext function 
    }
-
 
    if(txtfirstname.value.trim().length == 0) {
         msgText = "# txtfirstname is required"
@@ -76,23 +75,25 @@ function btnSubmit(){
     /*
         //- display form field information in log ie: 
 
-            msgText = "form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
+            msgText = "# form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
             txtlastname.value + ", email: " + txtemail.value + ", comment: ";
-
-            console.log(msgText)
     */
 
-    //divdisplayinfo.innerText = "form submitted"
+    msgText = "# form submitted: firstname: " + txtfirstname.value
+    console.log(msgText)
+
+    divdisplayinfo.innerText = "form submitted"
+
+    //clear each field value 
+    txtfirstname.value = "";
 
     /*
-        //clear each field value 
-        txtfirstname.value = "";
         txtlastname.value = "";
         txtemail.value = "";
         txtcomment.value = "";
+    */
 
         txtfirstname.focus();
-    */
 
     //prevent form post/reload
     return false
