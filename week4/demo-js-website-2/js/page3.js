@@ -201,6 +201,8 @@ function btnClear(){
     
     console.log(msgText.toUpperCase())
     
+    //--- validate if elements are found --
+
     if(divdisplayinfo == null | divdisplayinfo == undefined) {
       msgText = "# divdisplayinfo not found"
       console.log(msgText)    
