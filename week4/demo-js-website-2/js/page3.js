@@ -118,7 +118,7 @@ function btnSubmit(){
     //console.log(msgText)
 
     msgText = "# form submitted: firstname: " + txtfirstname.value  + ", lastname: " + 
-    txtlastname.value + txtlastname.value + ", email: " 
+    txtlastname.value + txtlastname.value + ", email: " + txtemail.value
 
     //optimize string concatination - es6+ template literal string 
 
