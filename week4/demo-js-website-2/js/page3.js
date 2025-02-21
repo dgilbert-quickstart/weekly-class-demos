@@ -61,6 +61,17 @@ function btnSubmit(){
         msgText = "# firstname is required"
         console.log(msgText)      
         divdisplayinfo.innerText = msgText;  
+
+        //show eror lable 
+        errorfirstname.style.display = "inline-block"
+
+        //other:
+        //add remove element class 
+        //txtfirstname.style.????? -- border/color/other 
+        
+        //txtfirstname.classList.remove(".errorfirstname")
+        //txtfirstname.classList.add(".errorfirstname")
+
         return false; //prevent form submit/exit function 
     }
 
