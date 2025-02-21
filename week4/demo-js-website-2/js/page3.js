@@ -195,7 +195,52 @@ function btnClear(){
 
     console.log(msgText.toUpperCase())
 
+    const divdisplayinfo = document.getElementById("divdisplayinfo");
+    const txtfirstname = document.getElementById("txtfirstname");
+    const txtlastname = document.getElementById("txtlastname");
+    const errorfirstname = document.getElementById("errorfirstname");
+    
+    if(divdisplayinfo == null | divdisplayinfo == undefined) {
+      msgText = "# divdisplayinfo not found"
+      console.log(msgText)    
+      return false; //prevent form submit/ext function 
+    }
+     
+    if(errorfirstname == null | errorfirstname == undefined) {
+        msgText = "# errorfirstname not found"
+        console.log(msgText)    
+        return false; //prevent form submit/ext function 
+    }
+    
+    if(txtfirstname == null | txtfirstname == undefined) {
+        msgText = "# firstname not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+
+    if(txtlastname == null | txtlastname == undefined) {
+        msgText = "# lastname not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+
+    //hide error lables
+    errorfirstname.style.display = "none"
+    
+    //clear element border color 
+    txtfirstname.style.borderColor = "initial" //or black 
+
+    //clear fields 
+    divdisplayinfo.innerText = "";
+    txtfirstname.value = "";
+    txtlastname.value = "";
+
+    txtfirstname.focus(); //move keybord cursor to field 
+
 }
+
 
 
 
