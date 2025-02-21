@@ -59,6 +59,17 @@ function btnSubmit(){
             2- validate if lastname field is not null or undefined, if so, display invalid field entry message and exit function
     */
 
+    const txtlastname = document.getElementById("txtlastname");
+
+    if(txtlastname == null | txtlastname == undefined) {
+        msgText = "# lastname not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+
+    console.log("-- get email element --")
+
     /*
         email:
             1- select email field using document.getElementById
@@ -80,7 +91,14 @@ function btnSubmit(){
             txtlastname.value + ", email: " + txtemail.value + ", comment: ";
     */
 
-    msgText = "# form submitted: firstname: " + txtfirstname.value
+    //console.log("# firstname: ", txtfirstname.value)
+    //console.log("# lastname: " + txtlastname.value)
+    //msgText = "email: " + txtemail
+    //console.log(msgText)
+
+    msgText = "# form submitted: firstname: " + txtfirstname.value  + ", lastname: " + 
+    txtlastname.value 
+
     console.log(msgText)
 
     msgText = "form submitted"
