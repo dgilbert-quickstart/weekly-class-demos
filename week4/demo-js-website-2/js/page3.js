@@ -39,8 +39,12 @@ function btnSubmit(){
        console.log(msgText)    
        return false; //prevent form submit/ext function 
      }
-  
-     console.log("-- get first name element --")
+       
+    //hide error lables
+    errorfirstname.style.display = "none"
+
+    console.log("-- get first name element --")
+    
     /*
         firtname:
             1- select firstname field using document.getElementById
@@ -68,7 +72,7 @@ function btnSubmit(){
         //other:
         //add remove element class 
         //txtfirstname.style.????? -- border/color/other 
-        
+
         //txtfirstname.classList.remove(".errorfirstname")
         //txtfirstname.classList.add(".errorfirstname")
 
