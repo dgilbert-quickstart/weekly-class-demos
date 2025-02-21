@@ -37,6 +37,7 @@ function btnSubmit(){
     if(errorfirstname == null | errorfirstname == undefined) {
        msgText = "# errorfirstname not found"
        console.log(msgText)    
+       divdisplayinfo.innerText = msgText;  
        return false; //prevent form submit/ext function 
      }
        
@@ -209,6 +210,7 @@ function btnClear(){
     if(errorfirstname == null | errorfirstname == undefined) {
         msgText = "# errorfirstname not found"
         console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
         return false; //prevent form submit/ext function 
     }
     
