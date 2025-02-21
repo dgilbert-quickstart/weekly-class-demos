@@ -106,14 +106,14 @@ function btnSubmit(){
 
     //clear each field value 
     txtfirstname.value = "";
+    txtlastname.value = "";
 
     /*
-        txtlastname.value = "";
         txtemail.value = "";
         txtcomment.value = "";
     */
 
-        txtfirstname.focus();
+    txtfirstname.focus();
 
     //prevent form post/reload
     return false
