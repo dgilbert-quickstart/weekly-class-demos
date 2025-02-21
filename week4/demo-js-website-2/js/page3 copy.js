@@ -268,12 +268,5 @@ function btnClear(){
 }
 
 
-function btnSubmitTest(){
 
-    let msgText = "# page3: btnSubmitTest";
-
-    console.log(msgText.toUpperCase())
-  
-    return false
-}
 
