@@ -26,8 +26,21 @@ function btnSubmit(){
      return false; //prevent form submit/ext function 
    }
 
-   console.log("-- validate firstname --")
+   console.log("-- get error fiedls --")
 
+   /*
+     select error fields
+   */
+     
+    const errorfirstname = document.getElementById("errorfirstname");
+
+    if(errorfirstname == null | errorfirstname == undefined) {
+       msgText = "# errorfirstname not found"
+       console.log(msgText)    
+       return false; //prevent form submit/ext function 
+     }
+  
+     console.log("-- get first name element --")
     /*
         firtname:
             1- select firstname field using document.getElementById
