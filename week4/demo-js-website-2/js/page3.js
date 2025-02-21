@@ -180,6 +180,7 @@ function btnSubmit(){
     divdisplayinfo.innerText = msgText
 
     //clear each field value 
+    //# optimize, refactor code or duplicate code: create "clearFormFields()"
     txtfirstname.value = "";
     txtlastname.value = "";
     txtemail.value = "";
@@ -255,6 +256,7 @@ function btnClear(){
     txtfirstname.style.borderColor = "initial" //or black 
 
     //clear fields 
+    //# optimize, refactor code or duplicate code: create "clearFormFields()"    
     divdisplayinfo.innerText = "";
     txtfirstname.value = "";
     txtlastname.value = "";
