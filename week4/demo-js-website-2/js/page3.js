@@ -194,12 +194,12 @@ function btnClear(){
 
     let msgText = "# page3: btnClear";
 
-    console.log(msgText.toUpperCase())
-
     const divdisplayinfo = document.getElementById("divdisplayinfo");
     const txtfirstname = document.getElementById("txtfirstname");
     const txtlastname = document.getElementById("txtlastname");
     const errorfirstname = document.getElementById("errorfirstname");
+    
+    console.log(msgText.toUpperCase())
     
     if(divdisplayinfo == null | divdisplayinfo == undefined) {
       msgText = "# divdisplayinfo not found"
