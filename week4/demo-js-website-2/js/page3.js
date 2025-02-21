@@ -105,12 +105,23 @@ function btnSubmit(){
             3- validate if comment field is empty, if so, display invalid field entry message and exit function
     */
 
-    /*
-        //- display form field information in log ie: 
+        const txtcomment = document.getElementById("txtcomment");
 
-            msgText = "# form submitted: firstname: " + txtfirstname.value + ", lastname: " + 
-            txtlastname.value + ", email: " + txtemail.value + ", comment: ";
-    */
+        if(txtcomment == null | txtcomment == undefined) {
+            msgText = "# comment not found"
+            console.log(msgText)    
+            divdisplayinfo.innerText = msgText;  
+            return false; //prevent form submit/exit function 
+        }
+
+        if(txtcomment.value.trim().length == 0) {
+            msgText = "# comment is required"
+            console.log(msgText)      
+            divdisplayinfo.innerText = msgText;  
+            return false; //prevent form submit/exit function 
+        }
+     
+    //- display form field information in log ie: 
 
     //console.log("# firstname: ", txtfirstname.value)
     //console.log("# lastname: " + txtlastname.value)
@@ -118,7 +129,8 @@ function btnSubmit(){
     //console.log(msgText)
 
     msgText = "# form submitted: firstname: " + txtfirstname.value  + ", lastname: " + 
-    txtlastname.value + txtlastname.value + ", email: " + txtemail.value
+    txtlastname.value + txtlastname.value + ", email: " + txtemail.value + ", comment: " 
+    + txtcomment.value
 
     //optimize string concatination - es6+ template literal string 
 
