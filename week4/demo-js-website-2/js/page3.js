@@ -38,16 +38,17 @@ function btnSubmit(){
    const txtfirstname = document.getElementById("txtfirstname");
 
    if(txtfirstname == null | txtfirstname == undefined) {
-     msgText = "# txtfirstname not found"
+     msgText = "# firstname not found"
      console.log(msgText)    
-     return false; //prevent form submit/ext function 
+     divdisplayinfo.innerText = msgText;  
+     return false; //prevent form submit/exit function 
    }
 
    if(txtfirstname.value.trim().length == 0) {
-        msgText = "# txtfirstname is required"
+        msgText = "# firstname is required"
         console.log(msgText)      
         divdisplayinfo.innerText = msgText;  
-        return false; //prevent form submit/ext function 
+        return false; //prevent form submit/exit function 
     }
 
    console.log("-- get lastname  element --")
