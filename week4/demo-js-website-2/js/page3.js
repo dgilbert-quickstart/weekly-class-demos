@@ -44,7 +44,7 @@ function btnSubmit(){
     errorfirstname.style.display = "none"
 
     console.log("-- get first name element --")
-    
+
     /*
         firtname:
             1- select firstname field using document.getElementById
@@ -61,6 +61,9 @@ function btnSubmit(){
      return false; //prevent form submit/exit function 
    }
 
+   //clear element border color 
+   txtfirstname.style.borderColor = "initial"
+
    if(txtfirstname.value.trim().length == 0) {
         msgText = "# firstname is required"
         console.log(msgText)      
@@ -68,6 +71,9 @@ function btnSubmit(){
 
         //show eror lable 
         errorfirstname.style.display = "inline-block"
+
+        //set element border color 
+        txtfirstname.style.borderColor = "red";
 
         //other:
         //add remove element class 
