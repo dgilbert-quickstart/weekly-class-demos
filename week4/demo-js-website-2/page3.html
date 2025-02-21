@@ -22,8 +22,10 @@
         <div id="divdisplayinfo"></div>
         <p></p>
         <form>
-            <label>* First Name: </label><input type="text" id="txtfirstname" placeholder="* firstname required" maxlength="25"><br>
-            <label></label> Last Name: </label><input type="text" id="txtlastname" maxlength="25"><br>
+            <label>* First Name: </label><input type="text" id="txtfirstname" placeholder="* firstname required" maxlength="25">
+            <span id="errorfirstname" style="display:inline-block;color:red"> * first name required </span>
+            <br>
+            <label>Last Name: </label><input type="text" id="txtlastname" maxlength="25"><br>
             <label>* Email: </label><input type="text" id="txtemail" placeholder="* email required" maxlength="80"><br>
             <label>* comment: </label><br>
             <textarea id="txtcomment" placeholder="* comment required" cols="30" rows="5" maxlength="150"></textarea><br>
