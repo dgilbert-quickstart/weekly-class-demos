@@ -178,10 +178,7 @@ function btnSubmit(){
     txtfirstname.value = "";
     txtlastname.value = "";
     txtemail.value = "";
-
-    /*
-        txtcomment.value = "";
-    */
+    txtcomment.value = "";    
 
     txtfirstname.focus();
 
