@@ -69,7 +69,7 @@ function btnSubmit(){
         console.log(msgText)      
         divdisplayinfo.innerText = msgText;  
 
-        //show eror lable 
+        //show eror label 
         errorfirstname.style.display = "inline-block"
 
         //set element border color 
