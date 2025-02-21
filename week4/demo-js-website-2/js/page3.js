@@ -62,7 +62,7 @@ function btnSubmit(){
    }
 
    //clear element border color 
-   txtfirstname.style.borderColor = "initial"
+   txtfirstname.style.borderColor = "initial" //or black 
 
    if(txtfirstname.value.trim().length == 0) {
         msgText = "# firstname is required"
