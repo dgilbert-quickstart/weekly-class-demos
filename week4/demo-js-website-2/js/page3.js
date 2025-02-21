@@ -77,6 +77,27 @@ function btnSubmit(){
             3- validate if email field is empty, if so, display invalid field entry message and exit function
     */
 
+       const txtemail = document.getElementById("txtemail");
+
+       if(txtemail == null | txtemail == undefined) {
+            msgText = "# email not found"
+            console.log(msgText)    
+            divdisplayinfo.innerText = msgText;  
+            return false; //prevent form submit/exit function 
+        }
+
+        if(txtemail.value.trim().length == 0) {
+            msgText = "# email is required"
+            console.log(msgText)      
+            divdisplayinfo.innerText = msgText;  
+            return false; //prevent form submit/exit function 
+        }
+
+        //other validation: validate if email string/text is a valid email pattern ie: javascript regular expressions
+        //or HTML5 - <input type="email">
+
+        console.log("-- get comment element --")
+
     /*
         comment:
             1- select comment field using document.getElementById
@@ -97,7 +118,9 @@ function btnSubmit(){
     //console.log(msgText)
 
     msgText = "# form submitted: firstname: " + txtfirstname.value  + ", lastname: " + 
-    txtlastname.value 
+    txtlastname.value + txtlastname.value + ", email: " 
+
+    //optimize string concatination - es6+ template literal string 
 
     console.log(msgText)
 
@@ -107,9 +130,9 @@ function btnSubmit(){
     //clear each field value 
     txtfirstname.value = "";
     txtlastname.value = "";
+    txtemail.value = "";
 
     /*
-        txtemail.value = "";
         txtcomment.value = "";
     */
 
