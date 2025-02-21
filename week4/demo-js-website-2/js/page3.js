@@ -195,6 +195,8 @@ function btnClear(){
     const txtfirstname = document.getElementById("txtfirstname");
     const txtlastname = document.getElementById("txtlastname");
     const errorfirstname = document.getElementById("errorfirstname");
+    const txtemail = document.getElementById("txtemail");
+    const txtcomment = document.getElementById("txtcomment");
     
     console.log(msgText.toUpperCase())
     
@@ -204,8 +206,8 @@ function btnClear(){
       msgText = "# divdisplayinfo not found"
       console.log(msgText)    
       return false; //prevent form submit/ext function 
-    }
-     
+    }     
+    
     if(errorfirstname == null | errorfirstname == undefined) {
         msgText = "# errorfirstname not found"
         console.log(msgText)    
@@ -226,6 +228,20 @@ function btnClear(){
         divdisplayinfo.innerText = msgText;  
         return false; //prevent form submit/exit function 
     }
+    
+    if(txtemail == null | txtemail == undefined) {
+        msgText = "# email not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
+    
+    if(txtcomment == null | txtcomment == undefined) {
+        msgText = "# comment not found"
+        console.log(msgText)    
+        divdisplayinfo.innerText = msgText;  
+        return false; //prevent form submit/exit function 
+    }
 
     //hide error lables
     errorfirstname.style.display = "none"
@@ -237,6 +253,8 @@ function btnClear(){
     divdisplayinfo.innerText = "";
     txtfirstname.value = "";
     txtlastname.value = "";
+    txtemail.value = "";
+    txtcomment.value = "";
 
     txtfirstname.focus(); //move keybord cursor to field 
 
