@@ -191,7 +191,7 @@ function btnSubmit(){
 
 function btnClear(){
 
-    const msgText = "# page3: btnClear";
+    let msgText = "# page3: btnClear";
 
     console.log(msgText.toUpperCase())
 
