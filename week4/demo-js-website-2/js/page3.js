@@ -83,7 +83,8 @@ function btnSubmit(){
     msgText = "# form submitted: firstname: " + txtfirstname.value
     console.log(msgText)
 
-    divdisplayinfo.innerText = "form submitted"
+    msgText = "form submitted"
+    divdisplayinfo.innerText = msgText
 
     //clear each field value 
     txtfirstname.value = "";
