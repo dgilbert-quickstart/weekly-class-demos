@@ -3,8 +3,8 @@ function Page_Load(){
     console.log(msgText.toUpperCase())
 }
 
-
-function submit()
+//-- javascript function can be a javascript keyword
+function Submit()
 {
     let msgText="Form Submitted";
     console.log(msgText.toUpperCase())
@@ -21,4 +21,7 @@ function submit()
     /*
         addiotnal code 
     */
+
+        
+    return false;
 }
