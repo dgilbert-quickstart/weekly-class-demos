@@ -121,6 +121,19 @@ function lnkArrayAddRemoveLoopDemo1()
     const item_names = ["iteama","iteamb","iteamc","iteamd","iteame",]
     const item_names_and_values = [5,"iteama",15,"iteamb",15.1,"iteamc","iteamd","iteame",]
 
+    //print arrays 
+    print("---- arrays ---------")
+    print(items)
+    
+    print("-------------")
+    print(item_names)
+    
+    print("-------------")
+    print(item_names_and_values)
+
+    print("-------------")
+    print("")
+    
     //add item to array 
 
     //array loop 
