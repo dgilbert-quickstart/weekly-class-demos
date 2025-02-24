@@ -177,7 +177,7 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log(items)
     console.log("")
 
-    //update at array index 
+    //update at array index  
 
     //print array 
 
