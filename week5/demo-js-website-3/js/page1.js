@@ -133,7 +133,15 @@ function lnkArrayAddRemoveLoopDemo1()
 
     print("-------------")
     print("")
-    
+
+    //array length
+    print("---array--length----")
+    print(items.length)
+    print(item_names.length)
+    print(item_names_and_values.length)
+    print("")
+
+    print("--add item---")
     //add item to array 
 
     //array loop 
