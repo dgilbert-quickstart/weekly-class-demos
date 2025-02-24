@@ -159,6 +159,7 @@ function lnkArrayAddRemoveLoopDemo1()
     
     //add item to array 
     items.push(20.7)
+    //items.push //any data type - string, number, boolean, object
 
     //print array 
     console.log(items)
