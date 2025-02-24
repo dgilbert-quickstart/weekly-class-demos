@@ -32,5 +32,30 @@ function lnkArrayDemo1(){
     let msgText = "# page1: lnkArrayDemo1" 
 
     console.log(msgText.toUpperCase())
+
+    const items = [5,10,15.1,20,25]
+
+    /*
+    --- array index start at 0 = 1st item, ...
+    -- index = row starting at 0
+
+    0 = 5
+    1 = 10
+    2 = 15.1
+    3 = 20
+    4 = 25
+
+    */
+
+    //access element index starting at index 0
+    //#-- index not found or index out of bound 
+    //#-- access and index not in range ie: -1, 5, ... 10 ..
+    const total = (items[0] + items[1] + items[2] + items[3] + items[4])
+
+    console.log(`total: , ${total}`)
+
+    //rount floating point number , ie: 2 decimal points 
+    console.log(`round total: , ${total.toFixed(2)}`)
+
 }
 
