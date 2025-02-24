@@ -70,5 +70,42 @@ function lnkArrayLoopDemo1(){
     let msgText = "#page1 : lnkArrayLoopDemo1"
 
     console.log(msgText.toUpperCase())
+
+    const items = [5,10,15.1,20,25]
+    
+    console.log("array length: ", items.length);
+
+    let total = 0;
+
+    //for loop is used to loop through a fixed number of items
+    //for loop - uses a counter i , incremented for each loop
+    //counter start loop
+    //loop stop when counter is > then items.length
+
+    //for(counter/start=0;loop stop condition;increase/decrease counter)
+
+    //i = i + 1
+    //or
+    //i++
+    //or
+    //i--
+
+    //-
+    //- start at i = 0; loop while i < array.lngth; count i each time through loop
+    //- can have endless/infinate or out of memory loop 
+    //-
+
+    for(i=0; i<items.length; i++) {
+        
+        //total = total + current item[index]
+        //or any valid javascript code 
+        total = total + items[i]
+    }
+
+    console.log(`total: , ${total}`)
+
+    //rount floating point number , ie: 2 decimal points 
+    console.log(`round total: , ${total.toFixed(2)}`)
+
 }
 
