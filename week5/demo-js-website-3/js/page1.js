@@ -158,10 +158,12 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log("--add item---")
     //add item to array 
 
-    //array loop 
+    //print array 
 
     //remove item from array 
 
+    //print array 
+    
     //array loop
 
     //other loop do loop, while loop , foreach 
