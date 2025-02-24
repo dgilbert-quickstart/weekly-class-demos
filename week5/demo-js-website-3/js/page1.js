@@ -5,6 +5,15 @@ function page_load(){
     console.log(msgText.toUpperCase())
 }
 
+
+function lnkNonArrayDemo1(){
+
+    let msgText = "# page1: lnkNonArrayDemo1" 
+
+    console.log(msgText.toUpperCase())
+}
+
+
 function lnkArrayDemo1(){
 
     let msgText = "# page1: lnkArrayDemo1" 
