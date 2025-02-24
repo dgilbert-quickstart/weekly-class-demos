@@ -141,6 +141,20 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log(item_names_and_values.length)
     console.log("")
 
+    //access array by index 
+    console.log("-- access array index ")
+    console.log(items[0])
+    console.log(item_names[1])
+
+    const index = 1
+    console.log(item_names_and_values[index])
+    
+    console.log("-- increase index index++ = add 1")
+    
+    index++ 
+    console.log(item_names_and_values[index])
+
+    console.log("")
     console.log("--add item---")
     //add item to array 
 
