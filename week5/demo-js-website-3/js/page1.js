@@ -187,7 +187,7 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log("---- array loop ----")
     
     //array loop
-    for(ndx=0;ndx<items.length;ndx++){
+    for(ndx=0;ndx<items.length;ndx++){ 
         console.log(`${ndx} - ${items[ndx]}`)
     }
 
