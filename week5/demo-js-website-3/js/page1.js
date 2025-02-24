@@ -128,4 +128,7 @@ function lnkArrayAddRemoveLoopDemo1()
     //remove item from array 
 
     //array loop
+
+    //other loop do loop, while loop , foreach 
 }
+
