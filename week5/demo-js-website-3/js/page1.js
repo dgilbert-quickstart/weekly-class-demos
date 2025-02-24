@@ -34,6 +34,8 @@ function lnkArrayDemo1(){
     console.log(msgText.toUpperCase())
 
     const items = [5,10,15.1,20,25]
+    const item_names = ["iteama","iteamb","iteamc","iteamd","iteame",]
+    const item_names_and_values = [5,"iteama",15,"iteamb",15.1,"iteamc","iteamd","iteame",]
 
     /*
     --- array index start at 0 = 1st item, ...
@@ -57,5 +59,7 @@ function lnkArrayDemo1(){
     //rount floating point number , ie: 2 decimal points 
     console.log(`round total: , ${total.toFixed(2)}`)
 
+    //access item index 
+    console.log(item_names[0], item_names_and_values[2])
 }
 
