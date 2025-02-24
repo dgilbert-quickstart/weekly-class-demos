@@ -166,9 +166,16 @@ function lnkArrayAddRemoveLoopDemo1()
 
     console.log("")
 
+    console.log("--- remove item ---")
     //remove item from array 
+    items.pop() //remove element from end of array 
+    
+    //remove element at an index 
+    //items.splice(1,1) //splice(index, number_of_item_to_remove)
 
     //print array 
+    console.log(items)
+    console.log("")
 
     //update at array index 
 
