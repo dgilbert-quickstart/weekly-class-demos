@@ -101,7 +101,7 @@ function lnkArrayLoopDemo1(){
         //or any valid javascript code 
         
         //total = total + items[i]
-        total += + items[i]
+        total += items[i]
     }
 
     console.log(`total: , ${total}`)
