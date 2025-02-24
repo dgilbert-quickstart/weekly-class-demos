@@ -39,6 +39,8 @@ function lnkArrayDemo1(){
 
     /*
     --- array index start at 0 = 1st item, ...
+    --column index = 0...1..2
+    --or
     -- index = row starting at 0
 
     0 = 5
@@ -61,5 +63,12 @@ function lnkArrayDemo1(){
 
     //access item index 
     console.log(item_names[0], item_names_and_values[2])
+}
+
+function lnkArrayLoopDemo1(){
+
+    let msgText = "#page1 : lnkArrayLoopDemo1"
+
+    console.log(msgText.toUpperCase())
 }
 
