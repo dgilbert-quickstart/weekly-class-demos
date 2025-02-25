@@ -14,21 +14,29 @@ function lnkJsonDemo1()
     console.log(msgText.toUpperCase())
 
     //json object variable 
-    const user = {"id":1,"name":"ann","email":"ann@gmail.com"}
+    const user1 = {"id":1,"name":"ann","email":"ann@gmail.com"} //json object 
     
     //json document can be a string, convert string to json object 
-    
+    const str_user2 = `{"id":2,"name":"sam","email":"sam@gmail.com"}` //string 
+    const user2 = JSON.parse(str_user2); //convert json string to json object ie: api result 
+
     //example json document 1 {} , example json document 2 - [{},{}] , other nested document examples
-    
+
     //verify root or starting element can be a [] or {}
 
     //display json data as string 
-    console.log(JSON.stringify(user))
+    console.log("-- user1 ---")
+    console.log(JSON.stringify(user1))
+
+    console.log("-- user2 ---")
+    console.log(str_user2)  //string 
+    console.log(JSON.stringify(user2)) //json object to string
 
     //retieve document field data 
 
     //if (user == null | user.name == undefined)
-    console.log("name: ",user.name)
+    console.log("user1.name: ",user1.name)
+    console.log("user2.name: ",user2.name)
 
     //verify invalid, valid document 
 
