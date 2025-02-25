@@ -4,3 +4,13 @@ function page_load(){
 
     console.log(msgText.toUpperCase())
 }
+
+
+function lnkJsonDemo1()
+{
+    
+    const msgText = "# page2: lnkJsonDemo1"
+
+    console.log(msgText.toUpperCase())
+}
+
