@@ -16,6 +16,10 @@ function lnkJsonDemo1()
     //json object variable 
     const user = {"id":1,"name":"ann","email":"ann@gmail.com"}
     
+    //json document can be a string, convert string to json object 
+    
+    //example json document 1 {} , example json document 2 - [{},{}] , other nested document examples
+    
     //verify root or starting element can be a [] or {}
 
     //display json data as string 
