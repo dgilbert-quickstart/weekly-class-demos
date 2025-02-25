@@ -55,3 +55,34 @@ function lnkJsonDemo1()
 }
 
 
+function lnkJsonDemo2()
+{
+    const msgText = "# page2: lnkJsonDemo2"
+
+    console.log(msgText.toUpperCase())
+    
+    //example json document 1 {} , example json document 2 - [{},{}] , other nested document examples
+
+    //verify root or starting element can be a [] or {}
+
+    //display json data as string
+    
+    //retieve document field data 
+
+    //if (users == null | users[0].name == undefined)
+
+    //verify invalid, valid document 
+
+    //retieve nested json document fields
+
+    //loop through json documents , nested loops 
+    
+    //verify element level or starting element can be a [] or {}
+
+    //retiieve nested json document fields or array fields reference
+    
+    //verify element level or starting element can be a [] or {}
+
+    //convert json string to json object 
+
+}
