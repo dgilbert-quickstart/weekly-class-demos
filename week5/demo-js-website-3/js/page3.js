@@ -33,6 +33,10 @@ function lnkJsonApiDemo1()
         console.log("Jquery - Json API Data: " + "\nStatus: " + status)
         console.log(data); //jquery converts data to json object
     
+        console.log("")
+        console.log("-------- json data as string ----")
+        console.log(JSON.stringify(data))
+        console.log("")
         //retrieve data 
         const _name_email = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
 
