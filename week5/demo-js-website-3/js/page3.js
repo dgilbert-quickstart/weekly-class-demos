@@ -38,7 +38,7 @@ function lnkJqueryJsonApiDemo1()
     
         console.log("")
         console.log("-------- json data as string ----")
-        console.log(JSON.stringify(data))
+        //console.log(JSON.stringify(data))
         console.log("")
 
         //retrieve data 
