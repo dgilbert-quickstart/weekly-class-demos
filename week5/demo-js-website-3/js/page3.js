@@ -6,10 +6,10 @@ function page_load(){
 }
 
 
-function lnkJsonApiDemo1()
+function lnkJqueryJsonApiDemo1()
 {
     
-    let msgText = "# page3: lnkJsonApiDemo1"
+    let msgText = "# page3: lnkJqueryJsonApiDemo1"
 
     console.log(msgText.toUpperCase())
 
