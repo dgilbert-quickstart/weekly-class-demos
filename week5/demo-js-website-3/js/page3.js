@@ -23,7 +23,23 @@ function lnkJsonApiDemo1()
 
     divdisplayinfo.innerText = msgText;
 
-    //retrieve Api data 
+    const _api_url_endpoint_users = "https://jsonplaceholder.org/users";
+    const _api_url_endpoint_comments = "https://jsonplaceholder.org/comments";
+    const _api_url_endpoint_posts = "https://jsonplaceholder.org/posts";
+
+    //$.getJSON(_api_url_endpoint_users, function(data, status)
+    $.get(_api_url_endpoint_users, function(data, status)
+    {
+        console.log("Jquery - Json API Data: " + "\nStatus: " + status)
+        console.log(data); //jquery converts data to json object
+    
+        //retrieve data 
+        const _name = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
+
+        divdisplayinfo.innerText = _name 
+
+    });
+
 
     //verify root or starting element can be a [] or {}
 
