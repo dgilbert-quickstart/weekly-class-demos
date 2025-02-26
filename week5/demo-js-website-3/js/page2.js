@@ -85,6 +85,8 @@ function lnkJsonDemo2()
 
     //retieve document field data 
 
+    console.log("")
+    
     //if (user == null | user.name == undefined)
     console.log("users1[0].name: ",users1[0].name)
     console.log("users2[1].name: ",users2[1].name)
