@@ -27,6 +27,9 @@ function lnkJsonApiDemo1()
     const _api_url_endpoint_comments = "https://jsonplaceholder.org/comments";
     const _api_url_endpoint_posts = "https://jsonplaceholder.org/posts";
 
+    //api key example url
+    //const _api_url_endpoint_users_apikey = "https://jsonplaceholder.org/users/apik=youra-apikey";
+
     //$.getJSON(_api_url_endpoint_users, function(data, status)
     $.get(_api_url_endpoint_users, function(data, status)
     {
