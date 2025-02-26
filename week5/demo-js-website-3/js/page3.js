@@ -37,9 +37,10 @@ function lnkJsonApiDemo1()
         console.log("-------- json data as string ----")
         console.log(JSON.stringify(data))
         console.log("")
-        
+
         //retrieve data 
-        const _name_email = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
+        const _name_email = `data[0] ==> firstname: ${data[0].firstname}, 
+        email: ${data[0].email} , username: ${data[0].login.username}`;
 
         //for loop example
 
