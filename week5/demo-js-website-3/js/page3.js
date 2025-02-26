@@ -13,6 +13,16 @@ function lnkJsonApiDemo1()
 
     console.log(msgText.toUpperCase())
 
+    const divdisplayinfo = document.getElementById("divdisplayinfo");
+
+    if (divdisplayinfo == null | divdisplayinfo == undefined){       
+        msgText = "## Page3 - divdisplayinfo not found"
+        console.log(msgText) 
+        return false;
+    }
+
+    divdisplayinfo.innerText = msgText;
+    
     //retrieve Api data 
 
     //verify root or starting element can be a [] or {}
