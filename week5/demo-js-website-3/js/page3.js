@@ -94,7 +94,42 @@ function lnkFetchJsonApiDemo1()
     //api key example url
     //const _api_url_endpoint_users_apikey = "https://jsonplaceholder.org/users/apik=youra-apikey";
 
-    //Fetch Api 
+    //fetch - then - promise - non-blocking - javascript call then when data is available 
+    //another way of implementing promise = async/await 
+
+    fetch(_api_url_endpoint_users)
+    .then(response => {
+      if (!response.ok) {
+        //throw/raise - generate or a error and descrption 
+        throw new Error('Network response was not ok');
+      }
+      //-- convert data from text to json 
+      return response.json();
+    })
+    .then(data => {
+
+        console.log("#### fetch.promise then - post data ###")
+        console.log(data);
+
+        console.log("")
+        console.log("-------- json data as string ----")
+        //console.log(JSON.stringify(data))
+        console.log("")
+
+        //retrieve data 
+        const _name_email = `data[0] ==> firstname: ${data[0].firstname}, 
+        email: ${data[0].email} , login.username: ${data[0].login.username}`;
+
+        divdisplayinfo.innerText = _name_email
+        
+    })
+    .catch(error => {
+      console.error('## There was a problem with the fetch operation:', error);
+      divdisplayinfo.innerText = error;
+    });
+
+    console.log("..continue fetching data...demo of non-blocking code")
+    divdisplayinfo.innerText = "..continue fetching data...demo of non-blocking code";
 
     //verify root or starting element can be a [] or {}
 

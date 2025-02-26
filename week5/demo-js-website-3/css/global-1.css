@@ -8,3 +8,13 @@
 .global-footer {
     text-align: center;
 }
+
+
+.div-scroll-1 {
+    border: 1px solid #000000;
+    width: 200px;
+    height: 200px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
