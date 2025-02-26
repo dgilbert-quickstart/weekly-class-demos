@@ -36,6 +36,8 @@ function lnkJsonApiDemo1()
         //retrieve data 
         const _name = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
 
+        //for loop example
+        
         divdisplayinfo.innerText = _name 
 
     });
