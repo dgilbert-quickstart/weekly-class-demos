@@ -34,11 +34,11 @@ function lnkJsonApiDemo1()
         console.log(data); //jquery converts data to json object
     
         //retrieve data 
-        const _name = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
+        const _name_email = `data[0].firstname: ${data[0].firstname}, data[0].email: ${data[0].email}`;
 
         //for loop example
-        
-        divdisplayinfo.innerText = _name 
+
+        divdisplayinfo.innerText = _name_email
 
     });
 
