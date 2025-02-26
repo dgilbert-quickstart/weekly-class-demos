@@ -9,7 +9,7 @@ function page_load(){
 function lnkJsonApiDemo1()
 {
     
-    const msgText = "# page3: lnkJsonApiDemo1"
+    let msgText = "# page3: lnkJsonApiDemo1"
 
     console.log(msgText.toUpperCase())
 
@@ -22,7 +22,7 @@ function lnkJsonApiDemo1()
     }
 
     divdisplayinfo.innerText = msgText;
-    
+
     //retrieve Api data 
 
     //verify root or starting element can be a [] or {}
