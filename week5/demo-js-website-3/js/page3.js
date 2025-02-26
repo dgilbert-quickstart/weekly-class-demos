@@ -39,6 +39,12 @@ function lnkJqueryJsonApiDemo1()
     // some function use callback/ananymous function -- javascript calls callback/ananymous
     // -- when the data is available javascript call the callback/ananymnous function
     //
+    //function my_callback_function(data, status)
+    //{
+    //}
+    //
+    //$.get(_api_url_endpoint_users, my_callback_function)
+    //
     //$.getJSON(_api_url_endpoint_users, function(data, status)    
     $.get(_api_url_endpoint_users, function(data, status)
     {
