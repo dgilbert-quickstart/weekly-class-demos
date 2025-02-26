@@ -30,7 +30,16 @@ function lnkJqueryJsonApiDemo1()
     //api key example url
     //const _api_url_endpoint_users_apikey = "https://jsonplaceholder.org/users/apik=youra-apikey";
 
-    //$.getJSON(_api_url_endpoint_users, function(data, status)
+    //callback functions or ananymous functions - week 7-8-9
+    //learn more from w3school.com 
+    //example: 
+    // function getdata(data, statue) -- developer call function
+    // or
+    // callback or ananyomous 
+    // some function use callback/ananymous function -- javascript calls callback/ananymous
+    // -- when the data is available javascript call the callback/ananymnous function
+    //
+    //$.getJSON(_api_url_endpoint_users, function(data, status)    
     $.get(_api_url_endpoint_users, function(data, status)
     {
         console.log("Jquery - Json API Data: " + "\nStatus: " + status)
