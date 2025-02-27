@@ -23,9 +23,9 @@ function giphyApiDemo1()
 
     divdisplayinfo.innerText = msgText;
 
-
     //giphy url and api key  
     
+    const _search_text = "cars" //input text fields
     const _giphy_ApiKey = ""
     const _giphyApi_Url = ``;
 
