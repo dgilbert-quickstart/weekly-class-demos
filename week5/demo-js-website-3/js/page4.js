@@ -28,7 +28,7 @@ function giphyApiDemo1()
     const _search_text = "cars" //input text fields
     const _giphy_ApiKey = ""
     const _giphy_result_data_file = "./data/giphy2.json";
-    const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}.&q=${_search_text}&limit=25&rating=g`; 
+    const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}&q=${_search_text}&limit=25&rating=g`; 
 
     //fetch - then - promise - non-blocking - javascript call then when data is available 
     //another way of implementing promise = async/await 
