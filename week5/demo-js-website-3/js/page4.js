@@ -27,13 +27,20 @@ function giphyApiDemo1()
     
     const _search_text = "cars" //input text fields
     const _giphy_ApiKey = ""
-    const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}.&q=${_search_text}&limit=25`; 
+    const _giphy_result_data_file = "./data/giphy2.json";
+    const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}.&q=${_search_text}&limit=25&rating=g`; 
 
     //fetch - then - promise - non-blocking - javascript call then when data is available 
     //another way of implementing promise = async/await 
 
-    /*
-    fetch(_giphyApi_Url)
+    //inline or 1 line if statement 
+    let _request_url = (_giphy_ApiKey.trim().length == 0)? _giphy_result_data_file : _giphyApi_Url;
+
+    console.log("---- _request_url---- ");
+    console.log(_request_url)
+    console.log("")
+
+    fetch(_request_url)
     .then(response => {
       if (!response.ok) {
         //throw/raise - generate or a error and descrption 
@@ -66,8 +73,7 @@ function giphyApiDemo1()
     console.log("..continue fetching gphy data...demo of non-blocking code")
     divdisplayinfo.innerText = "..continue fetching giphy data...demo of non-blocking code";
 
-    */
-
+    
     //verify root or starting element can be a [] or {}
 
     //verify invalid, valid document 
