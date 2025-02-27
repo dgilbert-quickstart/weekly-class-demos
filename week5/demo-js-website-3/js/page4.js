@@ -60,9 +60,9 @@ function giphyApiDemo1()
         console.log("")
 
         //retrieve giphy data 
-        const giphapi_image = `## get giphy api image data##`
+        const giphapi_image = `<img width='200' height='150' src='${data.data[0].images.original.url}'>`
 
-        divdisplayinfo.innerText = giphapi_image
+        divdisplayinfo.innerHTML = giphapi_image
         
     })
     .catch(error => {
