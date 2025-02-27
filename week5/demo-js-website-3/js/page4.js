@@ -59,8 +59,14 @@ function giphyApiDemo1()
         //console.log(JSON.stringify(data))
         console.log("")
 
+        const _image = data.data[0].images.original.url;
+        
+        console.log("-- image ---");
+        console.log(_image)
+        console.log("")
+
         //retrieve giphy data 
-        const giphapi_image = `<img width='200' height='150' src='${data.data[0].images.original.url}'>`
+        const giphapi_image = `<img width='200' height='150' src='${_image}'>`
 
         divdisplayinfo.innerHTML = giphapi_image
         
