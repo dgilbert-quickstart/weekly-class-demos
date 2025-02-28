@@ -11,6 +11,11 @@
 
 
 .div-scroll-1 {
+    width: 400px;
+}
+
+
+.div-scroll-2 {
     border: 1px solid #000000;
     width: 400px;
     height: 200px;
@@ -18,3 +23,15 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/*
+media query - adjust screen based on screen width or height
+*/
+
+/*
+add google font 
+*/
+
+/*
+add scss - css compiler
+*/
