@@ -178,7 +178,14 @@ function btnSearch(){
           //console.log(JSON.stringify(data))
           console.log("")
   
-          const _image = data.data[0].images.original.url;
+          let _image = "";
+          
+          if(data == null | data.data.length == 0){
+            divdisplayinfo.innerText = "# no results found"
+            return false;
+          }
+
+          _image = data.data[0].images.original.url;
           
           console.log("-- image ---");
           console.log(_image)
