@@ -152,6 +152,27 @@ function btnSearch(){
       //fetch - then - promise - non-blocking - javascript call then when data is available 
       //another way of implementing promise = async/await 
   
+      /*
+        let _request_url = ""
+
+        if(_giphy_ApiKey.trim().length == 0) {
+        _request_url = _giphy_result_data_file 
+        }
+        else 
+        {
+        _request_url = _giphyApi_Url;
+        }
+
+        also: optional: optimization, code refactoring, update a variable in condenced statement 
+        similar to ? :
+        used whith nested code/nested updates
+
+        ?? -- chek if variable is null else use variable 
+        || -- chek if variable is null else use variable 
+        && -- chek if variable is null else use variable 
+
+        */
+
       //inline or 1 line if statement 
       let _request_url = (_giphy_ApiKey.trim().length == 0)? _giphy_result_data_file : _giphyApi_Url;
   
