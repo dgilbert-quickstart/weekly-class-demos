@@ -187,14 +187,40 @@ function btnSearch(){
 
           _image = data.data[0].images.original.url;
           
-          console.log("-- image ---");
+          console.log("-- first image ---");
           console.log(_image)
           console.log("")
   
           //retrieve giphy data 
-          const giphapi_image = `<img width='200' height='150' src='${_image}'>`
+          //const giphapi_image = `<img width='200' height='150' src='${_image}'>`
   
-          divdisplayinfo.innerHTML = giphapi_image
+          //display multiple images 
+          //build dynamic html in string or using DOM to dynamically append html elements
+
+          //add css style 
+          let _html = "<div>"
+          
+          for(i=0;i<data.data.length;i++)
+          {
+            //unit test: display 3 images , exit loop 
+            if(i>3)
+            {
+              //ext loop 
+              break;
+            }
+
+            _image = data.data[i].images.original.url;
+            _html += `<img width='100' height='100' src='${_image}'>`
+            //display 3 images per row 
+          }
+          
+          _html += "</div>"
+          
+          console.log("-------------- html string ----------")
+          console.log(_html)
+          console.log("")
+
+          divdisplayinfo.innerHTML = _html
           
       })
       .catch(error => {
