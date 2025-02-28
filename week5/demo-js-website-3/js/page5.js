@@ -223,8 +223,8 @@ function btnSearch(){
           
           for(i=0;i<data.data.length;i++)
           {
-            //unit test: display 3 images , exit loop 
-            if(i>3)
+            //unit test: display 5 images , exit loop 
+            if(i>5)
             {
               //ext loop 
               break;
