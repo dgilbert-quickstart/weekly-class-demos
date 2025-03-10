@@ -139,8 +139,25 @@ function array_demo_2()
     console.log(`map_example_3.length: \n`,map_example_3.length)
 
     console.log("")
-    
+
     //array index 
+    console.log("--- array index -- ")
+
+    //index outp of bound error - enter index not within the array size/length
+
+    console.log("list1[0]: \n",list1[0])
+    console.log("list2[0]: \n",list2[0])
+    console.log("list3[0]: \n",list3[0])
+    console.log("list4[0]': \n",list4[0])
+    console.log('list5[0]"": \n',list5[0])
+
+    console.log(`set_example_1[0]: \n`,set1[0])
+
+    console.log(`map_example_1[0]: \n`,map_example_1[0])
+    console.log(`map_example_2[0]: \n`,map_example_2[0])
+    console.log(`map_example_3[0]: \n`,map_example_3[0])
+
+    console.log("")
 
     //loop - for, foreach
 
