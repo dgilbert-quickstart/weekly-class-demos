@@ -57,6 +57,8 @@ function array_demo_1()
     //update 
 
     //delete 
+
+    //lookup 
 }
 
 
