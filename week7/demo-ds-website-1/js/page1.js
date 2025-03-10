@@ -145,6 +145,12 @@ function array_demo_2()
 
     //index outp of bound error - enter index not within the array size/length
 
+    //access index is same for update , ie: update array at index
+    //example - update 
+    //list1[0] = 10
+    //list2[0] = "itemc"
+    //list_other[0] = {"id":23"name":"itemc"}
+    
     console.log("list1[0]: \n",list1[0])
     console.log("list2[0]: \n",list2[0])
     console.log("list3[0]: \n",list3[0])
