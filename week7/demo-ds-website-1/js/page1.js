@@ -40,9 +40,9 @@ function array_demo_1()
     console.log("list1: \n",list1)
     console.log("list2: \n",list2)
     console.log("list3: \n",list3)
-    console.log("list4: \n",list4)
-    console.log("list5: \n",list5)
-    console.log("map_example: \n",map_example)
+    console.log("list4': \n",list4)
+    console.log('list5"": \n',list5)
+    console.log(`map_example: \n`,map_example)
 
     //array size 
 
