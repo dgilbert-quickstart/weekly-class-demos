@@ -165,6 +165,15 @@ function array_demo_2()
 
     console.log("")
 
+    // \ escape caharacter - enter special ascii code/character in strind
+    // \n - new line 
+    // \t - tab 
+    // \\n - literal escape character in string 
+
+    console.log("\\n")
+    
+    console.log("")
+
     //loop - for, foreach
 
     //CRUD, add, update, delete 
