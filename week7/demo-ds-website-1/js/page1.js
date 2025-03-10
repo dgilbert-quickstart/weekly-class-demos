@@ -24,6 +24,39 @@ function array_demo_1()
 
     //if element object does not exit, js generate errro 
     divdisplay.innerText = msgText;
+
+    const list1 = [18.46,16,7.3,25,3,80,3]  //numberic 
+    const list2 = ["item11","item2","item3","item1"] //string - ie: todo-list
+    const list3 = [{"id":1,"name":"item11"}, {"id":2,"name":"item12"}] //json object - ie: todo-list - can have duplicate data
+    const list4 = ["item11", 1,"item2",23.5,"item3",1,"item1"] //numeric and string  
+    const list5 = [{"id":1,"name": "itema", "price":87.1}] //ie: shopping cart item, json object array , can heve duplicate data 
+
+    const map_example = [{"key1": 1,"keya": 23.6}] //dictionary/map - key/value - or json object array - no duplicate key
+
+    //can list have dupliactes - list/array, tuple, stack, queue
+    //can have no duplicates or unique items - set, dictionary/map 
+    //can hae read-only, non-updatable list - tuple - initalize data, however, can not add, update, delete after iniiialze
+
+    console.log("list1: \n",list1)
+    console.log("list2: \n",list2)
+    console.log("list3: \n",list3)
+    console.log("list4: \n",list4)
+    console.log("list5: \n",list5)
+    console.log("map_example: \n",map_example)
+
+    //array size 
+
+    //array index 
+
+    //loop - for, foreach
+
+    //CRUD, add, update, delete 
+
+    //add
+
+    //update 
+
+    //delete 
 }
 
 
