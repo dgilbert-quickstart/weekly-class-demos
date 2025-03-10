@@ -34,6 +34,8 @@ function array_demo_1()
 
     const list5 = [{"id":1,"name": "itema", "price":87.1}] //ie: shopping cart item, json object array , can heve duplicate data 
 
+    const set1 = ["item11","item2","item3"] //set, does not contain duplicates  
+
     const map_example_1 = [{"key1": 1,"keya": 23.6}] //dictionary/map - key/value - or json object array - no duplicate key
     const map_example_2 = [{"key1": [1,2],"keya": {"itema":1}}] //dictionary/map - key/value - or json object array - no duplicate key
     const map_example_3 = [{"key1":"value1"},{"keya":5.2}] //dictionary/map - key/value - or json object array - no duplicate key
@@ -47,6 +49,9 @@ function array_demo_1()
     console.log("list3: \n",list3)
     console.log("list4': \n",list4)
     console.log('list5"": \n',list5)
+
+    console.log(`set_example_1: \n`,set1)
+
     console.log(`map_example_1: \n`,map_example_1)
     console.log(`map_example_2: \n`,map_example_2)
     console.log(`map_example_3: \n`,map_example_3)
