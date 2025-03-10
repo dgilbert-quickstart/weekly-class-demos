@@ -1,0 +1,41 @@
+.global-center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-h1 {
+    text-align: center;
+}
+
+.global-footer {
+    text-align: center;
+}
+
+
+.div-scroll-1 {
+    width: 400px;
+}
+
+
+.div-scroll-2 {
+    border: 1px solid #000000;
+    width: 400px;
+    height: 200px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+media query - adjust screen based on screen width or height
+*/
+
+/*
+add google font 
+*/
+
+/*
+add scss - css compiler
+*/
