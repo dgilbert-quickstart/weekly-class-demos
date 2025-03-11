@@ -764,6 +764,9 @@ function array_loop_demo_3()
     //-- new_array = array.map(current_item, [optional: index], [optional: original_array])
     //-- loop through new array = for, while, foreach  
 
+    //nested loop and map - create new array then assign array to foreach ie: function chaining
+    //array1.map(function(item)){}).foreach(function(item))
+
     //---------------------------------------
     //CRUD, add, update, delete 
     //---------------------------------------
