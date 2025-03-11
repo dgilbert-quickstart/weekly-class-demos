@@ -208,7 +208,7 @@ function array_loop_demo_1()
     divdisplay.innerText = msgText;
 
     const list1 = [18.46,16,7.3,25,3,80,3]  //numberic 
-    
+
     //list2
     const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
     //list3
@@ -299,7 +299,18 @@ function array_loop_demo_1()
 
     //loop - for, while, foreach, array.map - ie: recursion 
 
-    //for
+    let _output_string = "";
+
+    //for (counter-variable; stop loop condition ; increase/decrease counter-variable)
+    for(index=0; index<todolist1.length; index++)
+    {
+        _output_string = _output_string + todolist1[index] + " \n"
+    }
+
+    console.log("\n --outout_string --\n", _output_string, "\n")
+    
+    divdisplay.innerText = _output_string;
+
     //while, 
     //foreach, 
     //array.map 
