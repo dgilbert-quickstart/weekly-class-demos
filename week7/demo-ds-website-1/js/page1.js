@@ -174,7 +174,7 @@ function array_demo_2()
     
     console.log("")
 
-    //loop - for, foreach, while 
+    //loop - for, while, foreach, array.map - ie: recursion 
 
     //CRUD, add, update, delete 
 
