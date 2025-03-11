@@ -317,11 +317,11 @@ function array_loop_demo_1()
 
     //---- todolist2 ---
     //for (counter-variable; stop loop condition ; increase/decrease counter-variable)
-    for(index=0; index<todolist2.length; index++)
+    for(i=0; i<todolist2.length; i++)
     {
         //tolist2 - items = json object - access field  ie: arry[index].field 
-        
-        _output_string = _output_string + todolist2[index].name + " \n"
+
+        _output_string = _output_string + todolist2[i].name + " \n"
     }
 
     console.log("\n --output_string --\n", _output_string, "\n")
