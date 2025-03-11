@@ -333,7 +333,7 @@ function array_loop_demo_1()
     divdisplay.innerText += _output_string;
 
     //while, 
-    //foreach, 
+    //array.foreach, 
     //array.map 
 
     //---------------------------------------
