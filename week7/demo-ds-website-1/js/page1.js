@@ -458,9 +458,9 @@ function array_loop_demo_2()
     
     console.log("")
 
-    //loop - for, while, foreach, array.map - ie: recursion 
-
     let _output_string = "";
+    
+    //loop - for, while, foreach, array.map - ie: recursion 
 
     //---- todolist1 ---
 
@@ -498,6 +498,7 @@ function array_loop_demo_2()
     */
 
     //while, 
+
     
     //array.foreach, 
     //array.map 
