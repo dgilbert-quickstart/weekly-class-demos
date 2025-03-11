@@ -743,6 +743,7 @@ function array_loop_demo_3()
     //function myfunction(current_item, index, origin_array) {}
     //todolist1.forEach(myfunction)
 
+    //todolist1.forEach(function(current_item)
     todolist1.forEach(function(current_item, index, origin_array)
     {
         _output_string += `${index} - ${current_item}  \n`
