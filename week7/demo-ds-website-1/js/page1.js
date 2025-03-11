@@ -326,7 +326,7 @@ function array_loop_demo_1()
 
     console.log("\n --output_string --\n", _output_string, "\n")
 
-    divdisplay.innerText += _output_string;
+    divdisplay.innerText = divdisplay.innerText  + _output_string;
 
     //while, 
     //foreach, 
