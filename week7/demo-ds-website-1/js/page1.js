@@ -208,9 +208,9 @@ function array_loop_demo_1()
     divdisplay.innerText = msgText;
 
     const list1 = [18.46,16,7.3,25,3,80,3]  //numberic 
-    //list3
+    //list2
     const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
-    //list4
+    //list3
     const todolist2 = [{"id":1,"name":"item1a"}, {"id":2,"name":"item1b"}] //json object - ie: todo-list - can have duplicate data
     
     const list4 = ["item11", 1,"item2",23.5,"item3",1,"item1"] //numeric and string  
