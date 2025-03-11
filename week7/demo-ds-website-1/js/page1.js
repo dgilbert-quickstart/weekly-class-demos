@@ -301,15 +301,32 @@ function array_loop_demo_1()
 
     let _output_string = "";
 
+    //---- todolist1 ---
+
     //for (counter-variable; stop loop condition ; increase/decrease counter-variable)
     for(index=0; index<todolist1.length; index++)
     {
         _output_string = _output_string + todolist1[index] + " \n"
     }
 
-    console.log("\n --outout_string --\n", _output_string, "\n")
+    console.log("\n --output_string --\n", _output_string, "\n")
     
     divdisplay.innerText = _output_string;
+
+    _output_string = "\n"
+
+    //---- todolist2 ---
+    //for (counter-variable; stop loop condition ; increase/decrease counter-variable)
+    for(index=0; index<todolist2.length; index++)
+    {
+        //tolist2 - items = json object - access field  ie: arry[index].field 
+        
+        _output_string = _output_string + todolist2[index].name + " \n"
+    }
+
+    console.log("\n --output_string --\n", _output_string, "\n")
+
+    divdisplay.innerText += _output_string;
 
     //while, 
     //foreach, 
