@@ -1020,6 +1020,21 @@ function array_loop_demo_4()
 
     divdisplay.innerText = _output_string;
 
+    //-- another way to write same code above ie: arr=map , loop arr 
+    //-- nested functions or function chaning foreach.map code -- 
+
+    _output_string = "\n"
+
+    todolist2.map(function(current_row_item){
+        //return each array row - create any formatted row
+        //return item
+        return `item2_${current_row_item.name}, completed: ${current_row_item.complete}`
+    }).forEach(function(item){
+        _output_string += item + "\n"
+    });
+
+    divdisplay.innerText += _output_string;
+
     //---------------------------------------
     //CRUD, add, update, delete 
     //---------------------------------------
