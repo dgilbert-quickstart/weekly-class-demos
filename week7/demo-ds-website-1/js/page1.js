@@ -321,12 +321,16 @@ function array_loop_demo_1()
     {
         //tolist2 - items = json object - access field  ie: arry[index].field 
 
-        _output_string = _output_string + todolist2[i].name + " \n"
+        //_output_string = _output_string + todolist2[i].name + " \n"
+        //or
+        _output_string += todolist2[i].name + " \n"
     }
 
     console.log("\n --output_string --\n", _output_string, "\n")
 
-    divdisplay.innerText = divdisplay.innerText  + _output_string;
+    //divdisplay.innerText = divdisplay.innerText  + _output_string;
+    //or
+    divdisplay.innerText += _output_string;
 
     //while, 
     //foreach, 
