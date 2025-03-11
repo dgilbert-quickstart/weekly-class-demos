@@ -94,7 +94,6 @@ function array_demo_2()
 
     const list1 = [18.46,16,7.3,25,3,80,3]  //numberic 
     const list2 = ["item11","item2","item3","item1"] //string - ie: todo-list
-
     const list3 = [{"id":1,"name":"item11"}, {"id":2,"name":"item12"}] //json object - ie: todo-list - can have duplicate data
     
     const list4 = ["item11", 1,"item2",23.5,"item3",1,"item1"] //numeric and string  
@@ -175,6 +174,11 @@ function array_demo_2()
     console.log("")
 
     //loop - for, while, foreach, array.map - ie: recursion 
+
+    //for
+    //while, 
+    //foreach, 
+    //array.map 
 
     //CRUD, add, update, delete 
 
