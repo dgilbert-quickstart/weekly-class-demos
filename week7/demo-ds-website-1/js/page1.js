@@ -751,6 +751,15 @@ function array_loop_demo_3()
 
     divdisplay.innerText = _output_string;
     
+    _output_string = "\n"
+
+    todolist2.forEach(function(item)
+    {
+        _output_string += `${item.name} - ${item.complete}  \n`
+    });
+
+    divdisplay.innerText += _output_string;
+    
     //array.map - create anew array from existing array 
     //-- new_array = array.map(current_item, [optional: index], [optional: original_array])
     //-- loop through new array = for, while, foreach  
