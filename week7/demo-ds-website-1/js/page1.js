@@ -208,10 +208,11 @@ function array_loop_demo_1()
     divdisplay.innerText = msgText;
 
     const list1 = [18.46,16,7.3,25,3,80,3]  //numberic 
+    
     //list2
     const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
     //list3
-    const todolist2 = [{"id":1,"name":"item1a"}, {"id":2,"name":"item1b"}] //json object - ie: todo-list - can have duplicate data
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, {"id":2,"name":"itemb","complete":false}] //json object - ie: todo-list - can have duplicate data
     
     const list4 = ["item11", 1,"item2",23.5,"item3",1,"item1"] //numeric and string  
 
@@ -303,14 +304,18 @@ function array_loop_demo_1()
     //foreach, 
     //array.map 
 
+    //---------------------------------------
     //CRUD, add, update, delete 
+    //---------------------------------------
 
-    //add
+    //add, array.push()
 
-    //update 
+    //update, ie: array[index] = "...update data" 
 
-    //delete 
+    //delete , array.splice(x,y) - x = index, y = number of item to delete
 
-    //lookup 
+    //lookup , indexof, find, filter 
+
 }
+
 
