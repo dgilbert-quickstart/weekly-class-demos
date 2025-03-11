@@ -497,9 +497,41 @@ function array_loop_demo_2()
 
     */
 
-    //while, 
+    let counter = 0;
 
+    //while (stop condifiton), 
+    while(counter < todolist1.length){
+
+        _output_string += todolist1[counter] + " \n"
+
+        //avoid endless loop - increment/decrement counter 
+        //counter = counter + 1
+        //or
+        counter++;
+    }
     
+    divdisplay.innerText = _output_string;
+
+    //--- todolist2  --- 
+    _output_string = "\n"
+    let counter2 = 0;
+
+    //do while (stop condifiton), 
+    do{
+
+        _output_string += `${todolist2[counter2].name}, complete: ${todolist2[counter2].complete}\n`
+
+        //avoid endless loop - increment/decrement counter 
+        //counter2 = counter2 + 1
+        //or
+        counter2++;
+
+    }while(counter2 < todolist2.length)
+    
+    //divdisplay.innerText = divdisplay + _output_string
+    //or
+    divdisplay.innerText += _output_string;
+
     //array.foreach, 
     //array.map 
 
