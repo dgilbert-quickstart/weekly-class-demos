@@ -776,6 +776,7 @@ function array_loop_demo_3()
     //update, ie: array[index] = "...update data" 
 
     //delete , array.splice(x,y) - x = index, y = number of item to delete
+    //array.pop() -- remove item from the end of the array 
 
     //lookup , indexof, find, filter 
 
