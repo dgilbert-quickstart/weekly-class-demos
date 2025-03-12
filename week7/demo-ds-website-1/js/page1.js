@@ -1288,7 +1288,7 @@ function array_search_demo_1()
     divdisplay.innerText += "\n\n -- indeOf search -- \n"
 
     //indexof return -1 if not found else return ind , 1st item 
-    const _found_index = todolist1.indexOf(_search_text.toLowerCase()) 
+    let _found_index = todolist1.indexOf(_search_text.toLowerCase()) 
 
     if(_found_index > -1)
     {
@@ -1305,6 +1305,33 @@ function array_search_demo_1()
     }
 
     //lookup , findIndex  - json object 
+
+    divdisplay.innerText += "\n\n -- findIndex search -- \n"
+
+    _search_text = "itema"
+
+    //indexof return -1 if not found else return ind , 1st item 
+    _found_index = todolist2.findIndex(function(item){        
+       if (item.name.trim() == _search_text.toLowerCase())
+       {
+            //exit findIndex when item found
+            return true;
+       }
+    }) 
+
+    if(_found_index > -1)
+    {
+        msgText =`# ${_search_text} found at index: ${_found_index} \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+    else
+    {
+        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
 
     //lookup, find - find 1 or 1st item 
 
