@@ -1110,6 +1110,16 @@ function array_crud_demo_1()
     //---------------------------------------
 
     //add, array.push()
+    todolist1.push("item5")
+
+    let _str_display = "";
+
+    //loop and display items to the screen 
+    todolist1.forEach(function(item){
+        _str_display += `${item} \n`
+    });
+
+    divdisplay.innerText = _str_display;
 
     //update, ie: array[index] = "...update data" 
 
