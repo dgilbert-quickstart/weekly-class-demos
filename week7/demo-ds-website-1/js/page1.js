@@ -1139,6 +1139,16 @@ function array_crud_demo_1()
     divdisplay.innerText += _str_display;
 
     //update, ie: array[index] = "...update data" 
+    todolist1[2] = "update-item3"
+    
+    _str_display = "\n---update---\n";
+
+    //loop and display items to the screen 
+    todolist1.forEach(function(item){
+        _str_display += `${item}\n`
+    });
+
+    divdisplay.innerText += _str_display;
 
     //delete , array.splice(x,y) - x = index, y = number of item to delete
     //array.pop() -- remove item from the end of the array 
