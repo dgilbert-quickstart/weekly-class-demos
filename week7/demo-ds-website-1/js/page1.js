@@ -1356,14 +1356,46 @@ function array_search_demo_1()
         divdisplay.innerText += msgText;
     }
     else
-    {
-        
+    {        
         msgText =`\n # ${_search_text} NOT found `
         console.log(msgText)
         divdisplay.innerText += msgText;
     }
 
     //lookup, filter - find multiple items 
+
+    divdisplay.innerText += "\n\n -- filter search -- \n"
+
+    _search_text = "itema"
+
+    const _items_found = todolist2.filter(function(item){        
+       if (item.name.trim() == _search_text.toLowerCase())
+       {
+            //exit find when item found
+            return true;
+       }
+    }) 
+
+    if(_items_found != undefined | _items_found != null)
+    {
+        msgText =`# ${_search_text} found \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+
+        //display items found
+        _str_display = "\n"
+        _items_found.forEach(function(item){
+            _str_display += `${item.id} - ${item.name} - ${item.complete} \n`
+        })
+
+        divdisplay.innerText += _str_display
+    }
+    else
+    {        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
 
 
 }
