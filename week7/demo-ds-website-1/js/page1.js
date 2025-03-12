@@ -1252,9 +1252,57 @@ function array_search_demo_1()
 
     //lookup , indexof, find, filter 
 
-    //manual loop 
+    //manual loop - for, do, while 
+    let _search_text = "item2" //string or number 
+    let _text_found = false;
+
+    for(let i=0;i<todolist1.length;i++)
+    {
+        //-- todolist2
+        //if(todolist2[i].name.trim().toLowerCase() == _search_text.toLowerCase())
+
+        //todolist1
+        if(todolist1[i].trim().toLowerCase() == _search_text.toLowerCase())
+        {
+            //found item 
+            _text_found = true;
+
+            msgText =`# ${_search_text} found at index: ${i}`
+            console.log(msgText)
+            divdisplay.innerText = msgText;
+            //exit for , while loops
+            break;
+        }
+    }
+
+    //-- disply item not found 
+    if(_text_found == false)
+    {        
+        msgText =`# ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText = msgText;
+    }
 
     //lookup , indexOf, -- string, integer, float - n/a - json objects 
+    
+    divdisplay.innerText += "\n\n -- indeOf search -- \n"
+
+    //indexof return -1 if not found else return ind , 1st item 
+    const _found_index = todolist1.indexOf(_search_text.toLowerCase()) 
+
+    if(_found_index > -1)
+    {
+        msgText =`# ${_search_text} found at index: ${_found_index} \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+    else
+    {
+        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
 
     //lookup , findIndex  - json object 
 
