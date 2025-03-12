@@ -1121,6 +1121,19 @@ function array_crud_demo_1()
 
     divdisplay.innerText = _str_display;
 
+    //add josn object
+    let _new_item = {"id":3,"name":"itemc","complete":false}
+    todolist2.push(_new_item)
+
+    _str_display = "\n";
+
+    //loop and display items to the screen 
+    todolist2.forEach(function(item){
+        _str_display += `${item.name} , ${item.complete}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+
     //update, ie: array[index] = "...update data" 
 
     //delete , array.splice(x,y) - x = index, y = number of item to delete
