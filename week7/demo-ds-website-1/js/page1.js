@@ -1195,3 +1195,74 @@ function array_crud_demo_1()
 
 }
 
+function array_search_demo_1()
+{
+    let msgText = "#page1::array_search_demo_1"
+    const divdisplay = document.getElementById("divdisplay"); //HTMLElement or null
+
+    if(divdisplay == null | divdisplay == undefined){
+
+        msgText = "#page1::divdisplay not found"
+        console.log(msgText)
+        console.error(msgText) //display error in console 
+        return false; //exit function , stop button click 
+    }
+
+    console.log(msgText.toUpperCase())
+
+    //if element object does not exit, js generate errro 
+    divdisplay.innerText = msgText;
+
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, {"id":2,"name":"itemb","complete":false}] //json object - ie: todo-list - can have duplicate data
+    
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+    
+    
+    //array size/length 
+    console.log("--- array length -- ")
+
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+    
+    
+    console.log("")
+
+    //array index 
+    console.log("--- array index -- ")
+    
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    
+    console.log("")
+
+
+    console.log("\\n")
+    
+    console.log("")
+
+    //lookup , indexof, find, filter 
+
+    //manual loop 
+
+    //lookup , indexOf, -- string, integer, float - n/a - json objects 
+
+    //lookup , findIndex  - json object 
+
+    //lookup, find - find 1 or 1st item 
+
+    //lookup, filter - find multiple items 
+
+
+}
+
+
