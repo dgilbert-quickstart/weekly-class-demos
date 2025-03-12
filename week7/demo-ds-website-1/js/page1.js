@@ -1216,7 +1216,10 @@ function array_search_demo_1()
     //list2
     const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
     //list3
-    const todolist2 = [{"id":1,"name":"itema", "complete":true}, {"id":2,"name":"itemb","complete":false}] //json object - ie: todo-list - can have duplicate data
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
     
     //list2
     console.log("todolist1: \n",todolist1)
@@ -1334,6 +1337,31 @@ function array_search_demo_1()
     }
 
     //lookup, find - find 1 or 1st item 
+    divdisplay.innerText += "\n\n -- find search -- \n"
+
+    _search_text = "itema"
+
+    const _item_found = todolist2.find(function(item){        
+       if (item.name.trim() == _search_text.toLowerCase())
+       {
+            //exit find when item found
+            return true;
+       }
+    }) 
+
+    if(_item_found != undefined | _item_found != null)
+    {
+        msgText =`# ${_search_text} found \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+    else
+    {
+        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
 
     //lookup, filter - find multiple items 
 
