@@ -1168,6 +1168,29 @@ function array_crud_demo_1()
     //delete , array.splice(x,y) - x = index, y = number of item to delete
     //array.pop() -- remove item from the end of the array 
 
+    todolist1.splice(1,1)
+
+    _str_display = "\n---delete todolist1 item--\n";
+
+    //loop and display items to the screen 
+    todolist1.forEach(function(item){
+        _str_display += `${item}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+    
+    //deleye from todolist2
+    todolist2.splice(1,1)
+
+    _str_display = "\n---delete todolist2 item--\n";
+
+    //loop and display items to the screen 
+    todolist2.forEach(function(item){
+        _str_display += `${item.name} , ${item.complete}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+
     //lookup , indexof, find, filter 
 
 }
