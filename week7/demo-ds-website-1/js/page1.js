@@ -1291,6 +1291,8 @@ function array_search_demo_1()
     divdisplay.innerText += "\n\n -- indeOf search -- \n"
 
     //indexof return -1 if not found else return ind , 1st item 
+    //todolist1.inclues() -- like or contains search 
+    //-- indexOf - case sensitive - 
     let _found_index = todolist1.indexOf(_search_text.toLowerCase()) 
 
     if(_found_index > -1)
@@ -1315,7 +1317,7 @@ function array_search_demo_1()
 
     //indexof return -1 if not found else return ind , 1st item 
     _found_index = todolist2.findIndex(function(item){        
-       if (item.name.trim() == _search_text.toLowerCase())
+       if (item.name.trim().toLowerCase() == _search_text.toLowerCase())
        {
             //exit findIndex when item found
             return true;
@@ -1342,7 +1344,7 @@ function array_search_demo_1()
     _search_text = "itema"
 
     const _item_found = todolist2.find(function(item){        
-       if (item.name.trim() == _search_text.toLowerCase())
+       if (item.name.trim().toLowerCase() == _search_text.toLowerCase())
        {
             //exit find when item found
             return true;
@@ -1369,7 +1371,7 @@ function array_search_demo_1()
     _search_text = "itema"
 
     const _items_found = todolist2.filter(function(item){        
-       if (item.name.trim() == _search_text.toLowerCase())
+       if (item.name.trim().toLowerCase() == _search_text.toLowerCase())
        {
             //exit find when item found
             return true;
