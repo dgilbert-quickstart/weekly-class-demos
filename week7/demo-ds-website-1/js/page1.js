@@ -1125,6 +1125,10 @@ function array_crud_demo_1()
     let _new_item = {"id":3,"name":"itemc","complete":false}
     todolist2.push(_new_item)
 
+    //modern javascript - spread, rest operators 
+    //-- another way add items add spread operator ... include all existing items and append to array 
+    //todolist2.push(..._new_item)
+
     _str_display = "\n";
 
     //loop and display items to the screen 
