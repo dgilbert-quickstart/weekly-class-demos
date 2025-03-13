@@ -1567,6 +1567,33 @@ function demo_array_update_1()
     // update arrays and display array update to screen 
     //-----------------------------------------------------
     
+    //update, ie: array[index] = "...update data" 
+    todolist1[2] = "update-item3"
+    
+    _str_display = "\n---update---\n";
+
+    //loop and display items to the screen 
+    todolist1.forEach(function(item){
+        _str_display += `${item}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+
+    _str_display = "\n";
+
+    //update, ie: array[index] = json object  
+    const _update_item = {"id":2, "name":"update item b", "complete":true}
+    todolist2[1] = _update_item;
+    
+    _str_display = "\n---update-josn object--\n";
+
+    //loop and display items to the screen 
+    todolist2.forEach(function(item){
+        _str_display += `${item.name}, ${item.complete}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+
 
 }
 
