@@ -1677,4 +1677,30 @@ function demo_array_delete_1()
 
 }
 
+function array_search_manual_1()
+{
+
+}
+
+function array_search_indexof_1()
+{
+
+}
+
+function array_search_findindex_1()
+{
+
+}
+
+function array_search_find_1()
+{
+
+}
+
+function array_search_filter_1()
+{
+
+}
+
+
 
