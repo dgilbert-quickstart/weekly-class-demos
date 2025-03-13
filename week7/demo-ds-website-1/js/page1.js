@@ -1831,6 +1831,30 @@ function array_search_indexof_1()
     //------------------------------------------
     // indexof search and array screen display 
     //------------------------------------------
+    //lookup , indexOf, -- string, integer, float - n/a - json objects 
+    
+    const _search_text = "item2"
+    
+    divdisplay.innerText += "\n\n -- indeOf search -- \n"
+
+    //indexof return -1 if not found else return ind , 1st item 
+    //todolist1.inclues() -- like or contains search 
+    //-- indexOf - case sensitive - 
+    let _found_index = todolist1.indexOf(_search_text.toLowerCase()) 
+
+    if(_found_index > -1)
+    {
+        msgText =`# ${_search_text} found at index: ${_found_index} \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+    else
+    {
+        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
 
 }
 
