@@ -1708,6 +1708,22 @@ function array_search_manual_1()
 function array_search_indexof_1()
 {
 
+    let msgText = "#page1::array_search_indexof_1"
+    const divdisplay = document.getElementById("divdisplay"); //HTMLElement or null
+
+    if(divdisplay == null | divdisplay == undefined){
+
+        msgText = "#page1::divdisplay not found"
+        console.log(msgText)
+        console.error(msgText) //display error in console 
+        return false; //exit function , stop button click 
+    }
+
+    console.log(msgText.toUpperCase())
+
+    //if element object does not exit, js generate errro 
+    divdisplay.innerText = msgText;
+
     //---------------------------------
     // define/initialize array
     //---------------------------------
@@ -1721,6 +1737,22 @@ function array_search_indexof_1()
 function array_search_findindex_1()
 {
 
+    let msgText = "#page1::array_search_findindex_1"
+    const divdisplay = document.getElementById("divdisplay"); //HTMLElement or null
+
+    if(divdisplay == null | divdisplay == undefined){
+
+        msgText = "#page1::divdisplay not found"
+        console.log(msgText)
+        console.error(msgText) //display error in console 
+        return false; //exit function , stop button click 
+    }
+
+    console.log(msgText.toUpperCase())
+
+    //if element object does not exit, js generate errro 
+    divdisplay.innerText = msgText;
+
     //---------------------------------
     // define/initialize array
     //---------------------------------
@@ -1733,6 +1765,22 @@ function array_search_findindex_1()
 function array_search_find_1()
 {
 
+    let msgText = "#page1::array_search_find_1"
+    const divdisplay = document.getElementById("divdisplay"); //HTMLElement or null
+
+    if(divdisplay == null | divdisplay == undefined){
+
+        msgText = "#page1::divdisplay not found"
+        console.log(msgText)
+        console.error(msgText) //display error in console 
+        return false; //exit function , stop button click 
+    }
+
+    console.log(msgText.toUpperCase())
+
+    //if element object does not exit, js generate errro 
+    divdisplay.innerText = msgText;
+
     //---------------------------------
     // define/initialize array
     //---------------------------------
@@ -1744,6 +1792,22 @@ function array_search_find_1()
 
 function array_search_filter_1()
 {
+
+    let msgText = "#page1::array_search_filter_1"
+    const divdisplay = document.getElementById("divdisplay"); //HTMLElement or null
+
+    if(divdisplay == null | divdisplay == undefined){
+
+        msgText = "#page1::divdisplay not found"
+        console.log(msgText)
+        console.error(msgText) //display error in console 
+        return false; //exit function , stop button click 
+    }
+
+    console.log(msgText.toUpperCase())
+
+    //if element object does not exit, js generate errro 
+    divdisplay.innerText = msgText;
 
     //---------------------------------
     // define/initialize array
