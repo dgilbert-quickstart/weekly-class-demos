@@ -11,7 +11,7 @@ function page_load()
     const msgText = "todolist::page_load()"
     console.log(msgText.toLowerCase())
 
-    //ie: make api call to reriee todolist from api / database 
+    //ie: make api call to reriee todolist from api / database  
 
     display_todolist()
 }
@@ -27,7 +27,7 @@ function display_todolist()
     let _str_output = "";
 
     console.log("## todolist ## \n", todolist)
-    
+
     if(divdisplay == null | divdisplay == undefined){
         msgText = "# divdisplay not found";
         console.error(msgText)
