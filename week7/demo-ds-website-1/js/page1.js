@@ -1738,7 +1738,7 @@ function array_search_manual_1()
     //------------------------------------------
     //manual loop - for, do, while
 
-    let _search_text = "item2" //string or number 
+    let _search_text = "itemb" //string or number 
     let _text_found = false;
 
     for(let i=0;i<todolist2.length;i++)
