@@ -2007,6 +2007,32 @@ function array_search_find_1()
     //------------------------------------------
     // find search and array screen display 
     //-----------------------------------------
+    //lookup, find - find 1 or 1st item 
+    divdisplay.innerText += "\n\n -- find search -- \n"
+
+    const _search_text = "itema"
+
+    const _item_found = todolist2.find(function(item){        
+       if (item.name.trim().toLowerCase() == _search_text.toLowerCase())
+       {
+            //exit find when item found
+            return true;
+       }
+    }) 
+
+    if(_item_found != undefined | _item_found != null)
+    {
+        msgText =`# ${_search_text} found \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+    else
+    {        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+
 }
 
 function array_search_filter_1()
@@ -2069,6 +2095,41 @@ function array_search_filter_1()
     //------------------------------------------
     // filter search and array screen display 
     //-----------------------------------------
+    //lookup, filter - find multiple items 
+
+    divdisplay.innerText += "\n\n -- filter search -- \n"
+
+    const _search_text = "itema"
+
+    const _items_found = todolist2.filter(function(item){        
+       if (item.name.trim().toLowerCase() == _search_text.toLowerCase())
+       {
+            //exit find when item found
+            return true;
+       }
+    }) 
+
+    if(_items_found != undefined | _items_found != null)
+    {
+        msgText =`# ${_search_text} found \n`
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+
+        //display items found
+        _str_display = "\n"
+        _items_found.forEach(function(item){
+            _str_display += `${item.id} - ${item.name} - ${item.complete} \n`
+        })
+
+        divdisplay.innerText += _str_display
+    }
+    else
+    {        
+        msgText =`\n # ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText += msgText;
+    }
+
 }
 
 
