@@ -1698,7 +1698,41 @@ function array_search_manual_1()
     //---------------------------------
     // define/initialize array
     //---------------------------------
-    
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
+
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+
+
+    //array size/length 
+    console.log("--- array length -- ")
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+
+
+    console.log("")
+    //array index 
+    console.log("--- array index -- ")
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    console.log("")
+
+
+    console.log("\\n")
+    console.log("")
+
     //------------------------------------------
     // manual saarch and array screen display 
     //------------------------------------------
@@ -1727,6 +1761,40 @@ function array_search_indexof_1()
     //---------------------------------
     // define/initialize array
     //---------------------------------
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
+
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+
+
+    //array size/length 
+    console.log("--- array length -- ")
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+
+
+    console.log("")
+    //array index 
+    console.log("--- array index -- ")
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    console.log("")
+
+
+    console.log("\\n")
+    console.log("")
 
     //------------------------------------------
     // indexof search and array screen display 
@@ -1756,6 +1824,40 @@ function array_search_findindex_1()
     //---------------------------------
     // define/initialize array
     //---------------------------------
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
+
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+
+
+    //array size/length 
+    console.log("--- array length -- ")
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+
+
+    console.log("")
+    //array index 
+    console.log("--- array index -- ")
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    console.log("")
+
+
+    console.log("\\n")
+    console.log("")
 
     //------------------------------------------
     // findindex search and array screen display 
@@ -1784,6 +1886,40 @@ function array_search_find_1()
     //---------------------------------
     // define/initialize array
     //---------------------------------
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
+
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+
+
+    //array size/length 
+    console.log("--- array length -- ")
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+
+
+    console.log("")
+    //array index 
+    console.log("--- array index -- ")
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    console.log("")
+
+
+    console.log("\\n")
+    console.log("")
 
     //------------------------------------------
     // find search and array screen display 
@@ -1812,7 +1948,41 @@ function array_search_filter_1()
     //---------------------------------
     // define/initialize array
     //---------------------------------
+    //list2
+    const todolist1 = ["item1","item2","item3","item1"] //string - ie: todo-list
+    //list3
+    const todolist2 = [{"id":1,"name":"itema", "complete":true}, 
+        {"id":2,"name":"itemb","complete":false},
+        {"id":3,"name":"itema","complete":true},] 
+        //json object - ie: todo-list - can have duplicate data
 
+    //list2
+    console.log("todolist1: \n",todolist1)
+    //list3
+    console.log("todolist2: \n",todolist2)
+
+
+    //array size/length 
+    console.log("--- array length -- ")
+    //list2
+    console.log("todolist1.length: \n",todolist1.length)
+    //list3
+    console.log("todolist2.length: \n",todolist2.length)
+
+
+    console.log("")
+    //array index 
+    console.log("--- array index -- ")
+    //list2
+    console.log("todolist1[0]: \n",todolist1[0])
+    //list3
+    console.log("todolist2[0]: \n",todolist2[0])
+    console.log("")
+
+
+    console.log("\\n")
+    console.log("")
+    
     //------------------------------------------
     // filter search and array screen display 
     //-----------------------------------------
