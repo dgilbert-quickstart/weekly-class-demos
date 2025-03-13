@@ -1,1 +1,55 @@
+//gloab or page level scope - memory veariable - accessble by any function on the page 
+//remove form memory when close page or morev to anoter page
+
+let todolist = [{"id":126,"name":"item one", "complete":false},
+    {"id":843,"name":"item two", "complete":true},
+    {"id":2356,"name":"item one", "complete":false}
+]
+
+function page_load()
+{
+    const msgText = "todolist::page_load()"
+    console.log(msgText.toLowerCase())
+
+    //ie: make api call to reriee todolist from api / database 
+
+    display_todolist()
+}
+
+function display_todolist()
+{
+    const msgText = "todolist::display_todolist()"
+    console.log(msgText.toLowerCase())
+
+    const msgdisplay = document.getElementById("msgdisplay");
+    const divdisplay = document.getElementById("divdisplay");
+
+    let _str_output = "";
+
+    console.log("## todolist ## \n", todolist)
+    
+    if(divdisplay == null | divdisplay == undefined){
+        msgText = "# divdisplay not found";
+        console.error(msgText)
+        console.log(msgText)
+        return false;
+    }
+
+    if(msgdisplay == null | msgdisplay == undefined){
+        msgText = "# msgdisplay not found";
+        console.error(msgText)
+        console.log(msgText)
+        return false;
+    }
+
+    todolist.forEach(function(item){
+        //html string 
+        _str_output += `<label>${item.name}</label> <button>x</button> <br>`
+    })
+
+    //divdisplay.innerText = _str_output;
+    divdisplay.innerHTML = _str_output;
+
+}
+
 
