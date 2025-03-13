@@ -1469,6 +1469,39 @@ function demo_array_add_1()
     // display array data to screen and log
     //----------------------------------------
     
+    //---------------------------------------
+    //CRUD, add, update, delete 
+    //---------------------------------------
+
+    //add, array.push()
+    todolist1.push("item5")
+
+    let _str_display = "";
+
+    //loop and display items to the screen 
+    todolist1.forEach(function(item){
+        _str_display += `${item} \n`
+    });
+
+    divdisplay.innerText = _str_display;
+
+    //add josn object
+    let _new_item = {"id":3,"name":"itemc","complete":false}
+    todolist2.push(_new_item)
+
+    //modern javascript - spread, rest operators 
+    //-- another way add items add spread operator ... include all existing items and append to array 
+    //todolist2.push(..._new_item)
+
+    _str_display = "\n";
+
+    //loop and display items to the screen 
+    todolist2.forEach(function(item){
+        _str_display += `${item.name} , ${item.complete}\n`
+    });
+
+    divdisplay.innerText += _str_display;
+
 }
 
 
