@@ -1522,6 +1522,15 @@ function demo_array_update_1()
     //if element object does not exit, js generate errro 
     divdisplay.innerText = msgText;
 
+    //-------------------------------
+    // define and initialize arrays 
+    //-------------------------------
+
+    //-----------------------------------------------------
+    // update arrays and display array update to screen 
+    //-----------------------------------------------------
+    
+
 }
 
 
