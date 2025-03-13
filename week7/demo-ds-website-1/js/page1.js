@@ -1420,6 +1420,18 @@ function demo_array_add_1()
     //if element object does not exit, js generate errro 
     divdisplay.innerText = msgText;
 
+    //-----------------------------------
+    // define and initialize arrays
+    //-----------------------------------
+    
+    //-----------------------------------
+    // add data to arrays
+    //-----------------------------------
+
+    //-----------------------------------------
+    // display array data to screen and log
+    //----------------------------------------
+    
 }
 
 
