@@ -1736,6 +1736,38 @@ function array_search_manual_1()
     //------------------------------------------
     // manual saarch and array screen display 
     //------------------------------------------
+    //manual loop - for, do, while
+     
+    let _search_text = "item2" //string or number 
+    let _text_found = false;
+
+    for(let i=0;i<todolist1.length;i++)
+    {
+        //-- todolist2
+        //if(todolist2[i].name.trim().toLowerCase() == _search_text.toLowerCase())
+
+        //todolist1
+        if(todolist1[i].trim().toLowerCase() == _search_text.toLowerCase())
+        {
+            //found item 
+            _text_found = true;
+
+            msgText =`# ${_search_text} found at index: ${i}`
+            console.log(msgText)
+            divdisplay.innerText = msgText;
+            //exit for , while loops
+            break;
+        }
+    }
+
+    //-- disply item not found 
+    if(_text_found == false)
+    {        
+        msgText =`# ${_search_text} NOT found `
+        console.log(msgText)
+        divdisplay.innerText = msgText;
+    }
+
     
 }
 
@@ -1982,7 +2014,7 @@ function array_search_filter_1()
 
     console.log("\\n")
     console.log("")
-    
+
     //------------------------------------------
     // filter search and array screen display 
     //-----------------------------------------
