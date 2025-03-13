@@ -1504,4 +1504,9 @@ function demo_array_add_1()
 
 }
 
+function demo_array_update_1()
+{
+
+}
+
 
