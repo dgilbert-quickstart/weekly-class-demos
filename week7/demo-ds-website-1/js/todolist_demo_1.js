@@ -42,8 +42,9 @@ function display_todolist()
         return false;
     }
 
-    todolist.forEach(function(item){
+    todolist.forEach(function(item, index){
         //html string 
+        //_str_output += `<label>${item.name}</label> <button onclick='lnkDelete(${index})'>x</button> <br>`
         _str_output += `<label>${item.name}</label> <button>x</button> <br>`
     })
 
@@ -51,5 +52,12 @@ function display_todolist()
     divdisplay.innerHTML = _str_output;
 
 }
+
+function lnkDelete(index)
+{
+    //deleyte code here
+    //todlist.splice(index,1)
+}
+
 
 
