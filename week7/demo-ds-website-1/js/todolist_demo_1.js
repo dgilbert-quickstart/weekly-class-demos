@@ -45,8 +45,8 @@ function display_todolist()
 
     todolist.forEach(function(item, index){
         //html string 
-        //_str_output += `<label>${item.name}</label> <button onclick='btnDelete(${index})'>x</button> <br>`
-        _str_output += `<label>${item.name}</label> <button>x</button> <br>`
+        //_str_output += `<label>${item.name}</label> <button>x</button> <br>`
+        _str_output += `<label>${item.name}</label> <button onclick='btnDelete(${index})'>x</button> <br>`
     })
 
     //-- build html using DOM - document.creaetElement and document.appendChild
@@ -58,6 +58,7 @@ function display_todolist()
 
 function btnDelete(index)
 {
+    console.log(`# delete index: ${index}`)
     //delete item from array 
     //todlist.splice(index,1)
 
