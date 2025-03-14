@@ -120,16 +120,46 @@ function lnkClearAdd()
     console.log(msgText)
 
     //select msgdisplay div 
-
     //select txtadd 
-
     //validate if msgdisplay exist
-
     //validaet if txtadd exists 
-
     //clear txtadd 
 
 }
 
+function lnkClearSearch()
+{
+    let msgText = "todolist::lnkClearSearch"
+    console.log(msgText)
+
+    //select msgdisplay div 
+    //select txtsearch 
+    //validate if msgdisplay exist
+    //validaet if txtsearch exists 
+    //clear txtsearch
+
+}
+
+function btnSearch()
+{
+    let msgText = "#todolist::btnSearch"
+
+    console.log(msgText)
+
+    //select msgdisplay 
+    //select dvidisplay
+    //select txtsearch
+
+    //validate if msgdisplay  found
+    //validate if dvidisplay found
+    //validate if txtsearch found 
+
+    //valid if a valid search text is entered 
+
+    // create new array using array.filter 
+
+    //if filterd array is not null
+    //loop throuh filtered array and display in divdisplay 
+}
 
 
