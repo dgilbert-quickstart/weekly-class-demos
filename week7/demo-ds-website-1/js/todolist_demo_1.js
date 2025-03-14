@@ -149,17 +149,62 @@ function btnSearch()
     //select msgdisplay 
     //select dvidisplay
     //select txtsearch
+    const msgdisplay = document.getElementById("msgdisplay")
+    const divdisplay = document.getElementById("divdisplay")
+    const txtsearch = document.getElementById("txtsearch")
 
     //validate if msgdisplay  found
     //validate if dvidisplay found
     //validate if txtsearch found 
+    
+    if(msgdisplay == null | msgdisplay == undefined){
+        msgText = "# msgdisplay not found"
+        console.log(msgText)
+        return false;
+    }
+
+    if(divdisplay == null | divdisplay == undefined){
+        msgText = "# divdisplay not found"
+        console.log(msgText)
+        return false;
+    }
+
+    if(txtsearch == null | txtsearch == undefined){
+        msgText = "# txtsearch not found"
+        console.log(msgText)
+        return false;
+    }
 
     //valid if a valid search text is entered 
+    if(txtsearch.value.trim().length == 0){
+        msgText = "# please enter valid text to search"
+        console.log(msgText)
+        msgdisplay.innerText = msgText
+        return false;
+    }
 
     // create new array using array.filter 
+    const _filtered_todlist = todolist.filter(function(item){
+        if(item.name.trim().toLowerCase() == txtsearch.value.trim().toLowerCase())
+        {
+            return true
+        }
+    })
 
-    //if filterd array is not null
+    //if filterd array is not null    
     //loop throuh filtered array and display in divdisplay 
+
+    console.log("\n # filtered todolist \n", _filtered_todlist);
+
+    let _str_output = "";
+
+    _filtered_todlist.forEach(function(item, index){
+        _str_output += `<label>${item.name}</label> <button onclick='btnDelete(${index})'>x</button> <br>`
+    })
+
+    divdisplay.innerHTML = _str_output;
+
+    txtsearch.value = ""
 }
 
 
