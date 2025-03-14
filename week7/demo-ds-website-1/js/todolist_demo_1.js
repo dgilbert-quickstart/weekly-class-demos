@@ -96,6 +96,8 @@ function btnAdd()
     }
 
     //add todolist item code 
+    const _new_item = {"id":283,"name":txtadd.value, "complete":false}
+    todolist.push(_new_item)
 
     msgText = "# text added"
     console.log(msgText)
@@ -103,6 +105,7 @@ function btnAdd()
     txtadd.value = ""
 
     //refresh screen, divdisplay 
+    display_todolist();
 
 }
 
