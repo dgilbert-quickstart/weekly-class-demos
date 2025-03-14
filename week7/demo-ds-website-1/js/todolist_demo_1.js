@@ -60,11 +60,14 @@ function btnDelete(index)
 {
     console.log(`# delete index: ${index}`)
     
-    //delete item from array 
-    todolist.splice(index,1)
-
-    //refresh divdisplay 
-    display_todolist()
+    if(confirm("delete item ?")){
+        //delete item from array 
+        todolist.splice(index,1)
+    
+        //refresh divdisplay 
+        display_todolist()
+    }
+        
 }
 
 function btnAdd()
