@@ -59,11 +59,12 @@ function display_todolist()
 function btnDelete(index)
 {
     console.log(`# delete index: ${index}`)
+    
     //delete item from array 
-    //todlist.splice(index,1)
+    todlist.splice(index,1)
 
     //refresh divdisplay 
-    //display_todolist()
+    display_todolist()
 }
 
 function btnAdd()
