@@ -16,6 +16,7 @@ function page_load()
     display_todolist()
 }
 
+//-- reduse/call function code in different functions 
 function display_todolist()
 {
     const msgText = "todolist::display_todolist()"
@@ -62,6 +63,37 @@ function btnDelete(index)
 
     //refresh divdisplay 
     //display_todolist()
+}
+
+function btnAdd()
+{
+    let msgText = "todolist::btnAdd"
+    
+    const msgdisplay = document.getElementById("msgdisplay");
+    const txtadd = document.getElementById("txtadd");
+    
+    if(msgdisplay == null | msgdisplay == undefined){
+        msgText = "# msgdisplay not found";
+        console.error(msgText)
+        console.log(msgText)
+        return false;
+    }
+    
+    if(txtadd == null | txtadd == undefined){
+        msgText = "# txtadd not found";
+        console.error(msgText)
+        console.log(msgText)
+        return false;
+    }
+
+    //validate if a add text is entered 
+
+    console.log(msgText)
+
+    //add todlist item code 
+
+    //refresh screen, divdisplay 
+
 }
 
 
