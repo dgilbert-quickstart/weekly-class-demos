@@ -48,6 +48,8 @@ function display_todolist()
         _str_output += `<label>${item.name}</label> <button>x</button> <br>`
     })
 
+    //-- build html using DOM - document.creaetElement and document.appendChild
+
     //divdisplay.innerText = _str_output;
     divdisplay.innerHTML = _str_output;
 
