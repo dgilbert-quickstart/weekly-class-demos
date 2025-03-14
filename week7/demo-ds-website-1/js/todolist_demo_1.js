@@ -61,7 +61,7 @@ function btnDelete(index)
     console.log(`# delete index: ${index}`)
     
     //delete item from array 
-    todlist.splice(index,1)
+    todolist.splice(index,1)
 
     //refresh divdisplay 
     display_todolist()
