@@ -87,10 +87,20 @@ function btnAdd()
     }
 
     //validate if a add text is entered 
+    if(txtadd.value.trim().length == 0){
 
+        msgText = "# please enter a text to add"
+        console.log(msgText)
+        msgdisplay.innerText = msgText
+        return false
+    }
+
+    //add todolist item code 
+
+    msgText = "# text added"
     console.log(msgText)
-
-    //add todlist item code 
+    msgdisplay.innerText = msgText
+    txtadd.value = ""
 
     //refresh screen, divdisplay 
 
