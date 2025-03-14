@@ -44,7 +44,7 @@ function display_todolist()
 
     todolist.forEach(function(item, index){
         //html string 
-        //_str_output += `<label>${item.name}</label> <button onclick='lnkDelete(${index})'>x</button> <br>`
+        //_str_output += `<label>${item.name}</label> <button onclick='btnDelete(${index})'>x</button> <br>`
         _str_output += `<label>${item.name}</label> <button>x</button> <br>`
     })
 
@@ -55,10 +55,13 @@ function display_todolist()
 
 }
 
-function lnkDelete(index)
+function btnDelete(index)
 {
-    //deleyte code here
+    //delete item from array 
     //todlist.splice(index,1)
+
+    //refresh divdisplay 
+    //display_todolist()
 }
 
 
