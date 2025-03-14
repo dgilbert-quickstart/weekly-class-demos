@@ -114,5 +114,22 @@ function btnAdd()
 
 }
 
+function lnkClearAdd()
+{
+    let msgText = "todolist::lnkClearAdd"
+    console.log(msgText)
+
+    //select msgdisplay div 
+
+    //select txtadd 
+
+    //validate if msgdisplay exist
+
+    //validaet if txtadd exists 
+
+    //clear txtadd 
+
+}
+
 
 
