@@ -14,7 +14,7 @@ function App() {
     */
    <>
     <div>
-        jsx 
+        <h2> React jsx intro </h2>
     </div>
      <div>
       <h2>Demo react app v1</h2>
@@ -22,8 +22,12 @@ function App() {
     <p></p>
     <a href="#">display info demo 1</a>
     <p></p>
+    <button>display info demo 2</button>
+    <p></p>
     <div id="divdisplay">
-
+    </div>
+    <div>
+      <p>footer @ 2025</p>
     </div>
    </>
   );
