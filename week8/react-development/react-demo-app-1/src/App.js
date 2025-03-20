@@ -17,6 +17,7 @@ function App() {
   }
 
   //arrow function - es5+ optimized function used in functional javascript programming
+  //function is defined as a variable 
   const btnDisplayInfo1 = () =>
   {
     
