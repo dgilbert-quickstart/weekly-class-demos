@@ -1,3 +1,5 @@
+import Header from "./components/Header"
+
 /*
 jsx - page/component
 ie: App = react component / page 
@@ -40,17 +42,6 @@ function App() {
   //--- function defined before retrun (
   //react eslint - javascrcipt compiler hints, errors, warnings
   //Line 10:12:  'lnkDisplayInfo1' is defined but never used
-
-  //custom react element/components/pages 
-  //move into seperate file 
-  function Header(){
-    //element/component/page - return jsx
-    return (
-      <>
-        <h2> React jsx intro 1.0</h2>
-      </>
-    )
-  }
 
   //react element/component/page
   //move into seperate file 
