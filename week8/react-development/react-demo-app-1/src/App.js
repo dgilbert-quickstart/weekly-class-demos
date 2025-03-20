@@ -74,7 +74,7 @@ function App() {
     <div id="divdisplay">
     </div>
     <div>
-       <Footer></Footer>
+       <Footer title="footer" year="2025"></Footer>
     </div>
    </>
   );
