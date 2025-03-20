@@ -51,9 +51,15 @@ function App() {
       top level - div 
       top <></>
     */
+
+    /*
+    props = properties - pass data to a component
+    property name = any-name=any-js-data-type
+    can pass in 1 or more properties/attributes 
+    */
    <>
     <div>
-        <Header/>
+        <Header title="React jsx intro 1.2"/>
     </div>
      <div>
       <h2>Demo react app v1</h2>
