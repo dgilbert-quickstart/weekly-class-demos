@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 /*
 jsx - page/component
@@ -42,17 +43,6 @@ function App() {
   //--- function defined before retrun (
   //react eslint - javascrcipt compiler hints, errors, warnings
   //Line 10:12:  'lnkDisplayInfo1' is defined but never used
-
-  //react element/component/page
-  //move into seperate file 
-  const Footer = () =>{
-    //element/component/page - return jsx
-    return (
-      <>
-        <p>footer @ 2025 </p>
-      </>
-    )
-  }
 
   return (
     /*
