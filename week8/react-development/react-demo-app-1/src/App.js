@@ -59,7 +59,7 @@ function App() {
     */
    <>
     <div>
-        <Header title="React jsx intro 1.2"/>
+        <Header title="React jsx intro 1.3"/>
     </div>
      <div>
       <h2>Demo react app v1</h2>
