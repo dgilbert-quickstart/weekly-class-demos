@@ -44,6 +44,7 @@ function App() {
   //custom react element/components/pages 
   //move into seperate file 
   function Header(){
+    //element/component/page - return jsx
     return (
       <>
         <h2> React jsx intro 1.0</h2>
@@ -54,6 +55,7 @@ function App() {
   //react element/component/page
   //move into seperate file 
   const Footer = () =>{
+    //element/component/page - return jsx
     return (
       <>
         <p>footer @ 2025 </p>
