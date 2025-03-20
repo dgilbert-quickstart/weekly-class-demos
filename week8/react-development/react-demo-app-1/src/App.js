@@ -16,12 +16,21 @@ function App() {
 
   }
 
+  const lnkDisplayInfo2 = () => {
+
+    let msgText = "# App::lnkDisplayInfo2"
+    
+    //alert(msgText)
+    console.log(msgText)
+
+  }
+
   //arrow function - es5+ optimized function used in functional javascript programming
   //function is defined as a variable 
-  const btnDisplayInfo1 = () =>
+  const btnDisplayInfo2 = () =>
   {
     
-    let msgText = "# App::btnDisplayInfo1"
+    let msgText = "# App::btnDisplayInfo2"
     
     //alert(msgText)
     console.log(msgText)
@@ -32,6 +41,26 @@ function App() {
   //react eslint - javascrcipt compiler hints, errors, warnings
   //Line 10:12:  'lnkDisplayInfo1' is defined but never used
 
+  //custom react element/components/pages 
+  //move into seperate file 
+  function Header(){
+    return (
+      <>
+        <h2> React jsx intro 1.0</h2>
+      </>
+    )
+  }
+
+  //react element/component/page
+  //move into seperate file 
+  const Footer = () =>{
+    return (
+      <>
+        <p>footer @ 2025 </p>
+      </>
+    )
+  }
+
   return (
     /*
       1 top level container elemen
@@ -41,7 +70,7 @@ function App() {
     */
    <>
     <div>
-        <h2> React jsx intro </h2>
+        <Header/>
     </div>
      <div>
       <h2>Demo react app v1</h2>
@@ -49,14 +78,14 @@ function App() {
     <p></p>
     <a href="#" onClick={lnkDisplayInfo1}>display info demo 1</a>
     <p></p>
-    <a href="#">display info demo 2</a>
+    <a href="#" onClick={lnkDisplayInfo2}>display info demo 2</a>
     <p></p>
-    <button onClick={btnDisplayInfo1}>display info demo 2</button>
+    <button onClick={btnDisplayInfo2}>display info demo 2</button>
     <p></p>
     <div id="divdisplay">
     </div>
     <div>
-      <p>footer @ 2025</p>
+       <Footer></Footer>
     </div>
    </>
   );
