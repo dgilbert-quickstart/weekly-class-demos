@@ -16,6 +16,17 @@ function App() {
 
   }
 
+  //arrow function - es5+ optimized function used in functional javascript programming
+  const btnDisplayInfo1 = () =>
+  {
+    
+    let msgText = "# App::btnDisplayInfo1"
+    
+    //alert(msgText)
+    console.log(msgText)
+
+  }
+
   //--- function defined before retrun (
   //react eslint - javascrcipt compiler hints, errors, warnings
   //Line 10:12:  'lnkDisplayInfo1' is defined but never used
@@ -37,7 +48,7 @@ function App() {
     <p></p>
     <a href="#" onClick={lnkDisplayInfo1}>display info demo 1</a>
     <p></p>
-    <button>display info demo 2</button>
+    <button onClick={btnDisplayInfo1}>display info demo 2</button>
     <p></p>
     <div id="divdisplay">
     </div>
