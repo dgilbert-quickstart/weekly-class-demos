@@ -49,6 +49,8 @@ function App() {
     <p></p>
     <a href="#" onClick={lnkDisplayInfo1}>display info demo 1</a>
     <p></p>
+    <a href="#">display info demo 2</a>
+    <p></p>
     <button onClick={btnDisplayInfo1}>display info demo 2</button>
     <p></p>
     <div id="divdisplay">
