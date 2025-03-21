@@ -25,14 +25,18 @@ function App() {
   //es5+ arrow functions - optimized functions 
   const lnkdemo2 = () =>
   {
-    let msgText = "# App:: lnkdemo1"
+    let msgText = "# App:: lnkdemo2"
     console.log(msgText)
+    divdisplay.current.innerText = msgText
+
   }
 
   const btndemo1 = () =>
   {
     let msgText = "# App:: btndemo1"
     console.log(msgText)
+    divdisplay.current.innerText = msgText
+
   }
 
   return (
