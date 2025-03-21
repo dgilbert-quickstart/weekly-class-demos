@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+
+  //functions 
+  //components - jsx - function retun(<> ..jsx.. </>)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+    <div>
+        <h1>React Demo app v02</h1>
+        <p></p>
+        <a href="#">link demo 1</a>
+        <p></p>
+        <a href="#">link demo 1</a>
+        <p></p>
+        <button>button demo 1</button>
+        <p></p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Footer @ 2025
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
+    </>
   );
 }
 
