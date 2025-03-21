@@ -46,14 +46,13 @@ function App() {
           <p></p>
           <a href="#" onClick={lnkdemo1}>link demo 1</a>
           <p></p>
-          <a href="#" onClick={lnkdemo2}>link demo 1</a>
+          <a href="#" onClick={lnkdemo2}>link demo 2</a>
           <p></p>
           <button onClick={btndemo1}>button demo 1</button>
           <p></p>
           <Footer title="footer" year={2025}></Footer>
       </div>
       <div id="divdisplay" ref={divdisplay}>
-
       </div>
     </>
   );
