@@ -3,11 +3,11 @@
 //- external file - export/import 
 const Footer = () =>
 {
-return(
+    return(
     <>
-    <p>
-        Footer @ 2025
-    </p>
+        <p>
+            Footer @ 2025
+        </p>
     </>
 )}
 
