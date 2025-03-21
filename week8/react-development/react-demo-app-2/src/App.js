@@ -77,6 +77,11 @@ function App() {
           <p></p>
           <button onClick={btndemo1}>button demo 1</button>
           <p></p>
+          <hr></hr>
+          <a href="#">useRef Demo 2</a>
+          <p></p>
+          <a href="#">useState Demo 2</a>
+          <p></p>
           <Footer title="footer" year={2025}></Footer>
       </div>
       <div id="divdisplay" ref={divdisplay}>
