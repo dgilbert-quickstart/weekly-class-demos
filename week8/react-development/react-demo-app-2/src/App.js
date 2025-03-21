@@ -22,11 +22,19 @@ function App() {
   }
 
   //components - jsx - function retun(<> ..jsx.. </>)
+  function Header()
+  {
+    return(
+      <>
+        <h1>React Demo app v02.0.1</h1>
+      </>
+    )
+  }
 
   return (
     <>
       <div>
-          <h1>React Demo app v02</h1>
+          <Header/>
           <p></p>
           <a href="#" onClick={lnkdemo1}>link demo 1</a>
           <p></p>
