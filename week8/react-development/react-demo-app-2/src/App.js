@@ -34,7 +34,7 @@ function App() {
           <p></p>
           <button onClick={btndemo1}>button demo 1</button>
           <p></p>
-          <Footer></Footer>
+          <Footer title="footer" year={2025}></Footer>
       </div>
     </>
   );

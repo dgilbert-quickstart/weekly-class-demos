@@ -1,12 +1,12 @@
 //components - jsx - function retun(<> ..jsx.. </>)
 //- add props
 //- external file - export/import 
-const Footer = () =>
+const Footer = (props) =>
 {
     return(
     <>
         <p>
-            Footer @ 2025
+            {props.title} @ {props.year}
         </p>
     </>
 )}
