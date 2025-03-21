@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <div>
-          <Header/>
+          <Header title="React Demo app v02.0.2"/>
           <p></p>
           <a href="#" onClick={lnkdemo1}>link demo 1</a>
           <p></p>

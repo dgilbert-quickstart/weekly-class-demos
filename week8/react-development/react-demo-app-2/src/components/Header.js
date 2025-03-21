@@ -2,11 +2,11 @@
 //components - jsx - function retun(<> ..jsx.. </>)
 //- add props
 //- external file - export/import 
-export default function Header()
+export default function Header(props)
 {
     return(
     <>
-    <h1>React Demo app v02.0.1</h1>
+        <h1>{props.title}</h1>
     </>
 )}
 
