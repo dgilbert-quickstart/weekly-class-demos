@@ -1,3 +1,5 @@
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -19,32 +21,6 @@ function App() {
   {
     let msgText = "# App:: btndemo1"
     console.log(msgText)
-  }
-
-  //components - jsx - function retun(<> ..jsx.. </>)
-  //- add props
-  //- external file - export/import 
-  function Header()
-  {
-    return(
-      <>
-        <h1>React Demo app v02.0.1</h1>
-      </>
-    )
-  }
-
-  //components - jsx - function retun(<> ..jsx.. </>)
-  //- add props
-  //- external file - export/import 
-  const Footer = () =>
-  {
-    return(
-      <>
-        <p>
-            Footer @ 2025
-        </p>
-      </>
-    )
   }
 
   return (
