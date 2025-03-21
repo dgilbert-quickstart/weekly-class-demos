@@ -22,11 +22,27 @@ function App() {
   }
 
   //components - jsx - function retun(<> ..jsx.. </>)
+  //- add props
+  //- external file - export/import 
   function Header()
   {
     return(
       <>
         <h1>React Demo app v02.0.1</h1>
+      </>
+    )
+  }
+
+  //components - jsx - function retun(<> ..jsx.. </>)
+  //- add props
+  //- external file - export/import 
+  const Footer = () =>
+  {
+    return(
+      <>
+        <p>
+            Footer @ 2025
+        </p>
       </>
     )
   }
@@ -42,9 +58,7 @@ function App() {
           <p></p>
           <button onClick={btndemo1}>button demo 1</button>
           <p></p>
-          <p>
-            Footer @ 2025
-          </p>
+          <Footer></Footer>
       </div>
     </>
   );
