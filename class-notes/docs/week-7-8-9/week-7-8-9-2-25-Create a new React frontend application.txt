@@ -1,0 +1,57 @@
+Create a new React frontend application
+
+- optional:
+- create a public repository
+- with readme file 
+- clone repo
+
+
+Install create react tools
+
+
+[sudo] npm install create-react-app -g
+
+[sudo] npm install yarn -g
+
+
+create new react appliciton
+
+
+- goto windows commandline or macos command terminal 
+
+- from cloned folder or from root application folder
+
+[sudo] create-react-app your-react-app
+
+[sudo] yarn create react-app demo-yarn-app-v1
+
+[sudo] npm create vite@latest react-demo-app-vite-v1 --temple react
+
+
+install react npm packages and start react appliction
+done 1 time on new react application creation or cloned react/nodejs app
+
+
+from vs.code 
+goto command terminal or the newly created react application
+
+cd your-react-app
+[sudo] npm install
+
+start react applicaiton
+[sudo] npm start 
+
+## vite 
+[sudo] npm rud dev
+
+access react applciton from localhost:3000
+
+stop react application 
+ctrl+c
+
+
+building/publishing react app
+
+[sudo] npm run build
+
+[sudo] yarn run build
