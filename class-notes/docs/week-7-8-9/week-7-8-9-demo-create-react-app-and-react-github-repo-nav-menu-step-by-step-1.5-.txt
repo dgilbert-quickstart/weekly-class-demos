@@ -1,0 +1,414 @@
+
+demo create react app and react github repo and react navigation menu
+
+globall install , done one time 
+
+[sudo]npm uninstall create-react-app -g
+[sudo]npm uninstall yarn -g
+
+[sudo] npm install -g create-react-app 
+[sudo] npm install -g yarn 
+
+delete "node_modules" from react project you are not using
+
+create-react-app --version 
+yarn --version
+
+############################################
+
+demo react website #2
+
+1. - create a public repo with readme file ie: react-demo-app-v01
+
+- from windows comand line or mac ternal 
+  from a un-cloned or root peject folder 
+
+2- clone repo 
+ git clone 
+
+3- create react app in cloned repo 
+  cd into cloned folder 
+
+  [sudo]create-react-app react-demo-app-v01
+  [sudo]yarn create react-app demo-yarn-app-v1
+  [sudo]npm create vite@latest react-demo-app-vite-v1 --temple react
+
+4. from vs.code goto cloned folder 
+goto newly created react app 
+select app.js
+from command terminal run the following commands
+ 
+insall nmp packages 
+= done one time 
+[sudo] npm install
+
+start react project 
+[sudo] npm start 
+
+optional: stop react app = ctr+c 
+
+note: 
+can acces react app from localhost:3000
+
+5. update react code to github repo  
+  from cloned folder and not from react folder 
+  goto newly created react app 
+  select app.js
+  add the following code inside <header> tag:
+  <p>live update demo 1...</p>
+  preview update in browse 
+
+6. open new command terminal from clone repository and not from react app
+  then enter git command to update git hub
+  git add, commit, push 
+  note: repeat steps for other project updates
+
+==================================
+
+7- modify react applicaiton and udpaet github 
+
+
+7.1. modify App.js the following
+
+function App() {
+  return (
+    <>
+          <p>Demo react app v1.0</p>
+          <div>
+            <a href="#">useRef demo 1</a><p></p>
+            <a href="#">useState demo 1</a><p></p>
+          </div>
+          <div>
+            [displa info]
+          </div>
+          <p>Footer @ 2025</p>
+    </>
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+7.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+
+
+############################################
+
+react demo wireframe
+
+React Demo App v01
+
+useref demo 1
+usestate demo 1
+
+footer @ 2025
+
+############################################
+
+8- modify react applicaiton and update github 
+  - create functions to test useref and usestate links
+  - add links to test useref and useState
+
+8.1. modify App.js the following
+
+function App() {
+
+  function lnkuserefdemo1(){
+   let msgText = "# app::lnkuserefdemo1"
+   console.log(msgText)
+  }
+
+
+  const lnkusestatedemo1 = () => {
+   let msgText = "# app::lnkusestatedemo1"
+   console.log(msgText)
+  }
+
+  return (
+    <>
+          <p>Demo react app v1.0</p>
+          <div>
+            <a href="#" onClick={lnkuserefdemo1}>useRef demo 1</a><p></p>
+            <a href="#" onClick={lnkusestatedemo1}>useState demo 1</a><p></p>
+          </div>
+          <div>
+            [displa info]
+          </div>
+          <p>Footer @ 2025</p>
+    </>
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+8.2 from cloned repo and not the react app 
+  goto command terminal 
+  update github
+  git add, commit, push 
+
+#############################################
+
+9- modify react applicaiton and create react components
+  - home 
+
+9.1 create Home.js component with the following code
+src\components\Home.js
+---------------------------------------
+
+function Home() {
+
+  function lnkuserefdemo1(){
+   let msgText = "# app::lnkuserefdemo1"
+   console.log(msgText)
+  }
+
+
+  const lnkusestatedemo1 = () => {
+   let msgText = "# app::lnkusestatedemo1"
+   console.log(msgText)
+  }
+
+  return (
+    <>
+          <p>Demo react app v1.0</p>
+          <div>
+            <a href="#" onClick={lnkuserefdemo1}>useRef demo 1</a><p></p>
+            <a href="#" onClick={lnkusestatedemo1}>useState demo 1</a><p></p>
+          </div>
+          <div>
+            [displa info]
+          </div>
+          <p>Footer @ 2025</p>
+    </>
+  );
+}
+
+export default Home;
+
+note: preview update in browser 
+
+9.2 from cloned repo and not the react app 
+  goto command terminal 
+  update github
+  git add, commit, push 
+
+#############################################
+
+10- update App.js to include home component
+
+10.1 App.js to the following
+
+import Home from './components/Home'
+
+function App() {
+
+
+  return (
+    <>
+       <Home/>
+    </>
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+10.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+  
+
+############################################
+
+11- test building/publishing react app
+
+from react app, goto command terminal and run the following command
+
+    - [sudo] npm run build
+    - [sudo] yarn build
+
+############################################
+
+12. install react router navigation
+- done 1 time 
+from react app app, goto command terminal and enter the following
+
+[sudo] npm install -D react-router-dom 
+
+note: react router dom is now added to pacakge.json 
+note: -D - add library only for development
+note: react will generate html url path 
+
+############################################
+
+13. Add navigation menu to react app
+update App.js to the following
+
+//import {BrowserRouter, Routes, Route} from "react-router-dom"
+//-- hashrouter - used with GitHub pages 
+import {HashRouter, Routes, Route} from "react-router-dom"
+import Home from './components/Home'
+
+function App() {
+  return (    
+    <>
+     <HashRouter>            
+      <Routes>      
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+     </HashRouter>    
+    </>
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+13.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+  
+
+#############################################
+
+14- create about components
+
+14.1 create Home.js component with the following code
+src\components\About.js
+---------------------------------------
+import { Link } from "react-router-dom";
+
+function About()
+{
+    return (
+        <>
+            <p>About Page</p>
+            <p></p>
+            <Link to="/">Home</Link>
+        </>
+    )
+}
+
+export default About;
+
+note: preview update in browser 
+
+14.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+
+#############################################
+
+15 add About component to react app  
+
+15.1 update App.js to the following
+
+//import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {HashRouter, Routes, Route} from "react-router-dom"
+import Home from './components/Home'
+import About from './components/About'
+
+function App() {
+  return (    
+    <HashRouter>            
+      <Routes>      
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
+    </HashRouter>    
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+15.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+
+############################################
+
+16. create navigation menu component
+
+16.1 create NavBar.js component with the following code
+src\components\NavBar.js
+---------------------------------------
+
+import { Link } from "react-router-dom";
+
+function NavBar() {
+    return (
+      <>
+          <nav>
+            <Link to="/">Home</Link> {" | "}
+            <Link to="/about">About</Link>
+          </nav>
+      </>
+    );
+}
+ 
+export default NavBar;
+
+note: preview update in browser 
+
+16.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+
+############################################
+
+17. add navigation component to app navigation
+
+17.1 update App.js to the following
+
+import {HashRouter, Routes, Route} from "react-router-dom"
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import About from './components/About'
+
+function App() {
+  return (    
+    <HashRouter>            
+     <NavBar/>  
+      <Routes>      
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
+    </HashRouter>    
+  );
+}
+
+export default App;
+
+note: preview update in browser 
+
+17.2 from cloned repo and not the react app 
+  update github
+  git add, commit, push 
+
+############################################
+
+create test page/components add test pages 
+to navigation component
+component/pages/page1
+component/pages/page2
+components/contactus 
+
+########################################
+
+create Header, Footer component 
+  - add props to header, footer
+
+#############################################
+
+modify Home component to include 
+  - header, footer
+  - add props to header, footer
