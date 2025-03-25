@@ -1,0 +1,45 @@
+Create demo react app 3.0 - step-by-step exercise 1
+
+1. create a new public react repo
+2. clone repo
+3. create react app - ie: command terminal
+4. npm install react libraries - ie: vs.code
+5. start react app - ie: vs.code
+6. enter demo text, test live update ie: vs.code
+7. update github ie: vs.code
+8. update app.js to wire frame
+9. update github ie: vs.code
+10. add src/componentd/Home.js
+11. update App.js to add Home.js
+12. update github ie: vs.code
+13. create linkdemo1 and linkdemo2 functions in App.js
+14. link functions to anchor tags
+15. update github ie: vs.code
+16. install reacr router dom - ie: vs.code
+17. update App.js with HasbRouter and Home route
+18. add src/components/About.js
+19. update App.js to include About route
+20. update github ie: vs.code
+21. create src/components/NavBar.js
+22. update App.js to add NavBar
+23. update github ie: vs.code
+24. note: can add other pages ie: Page1.js
+25. note: can add link to other pages ie: Home
+
+################################################
+
+demo wireframe
+
+Home | About 
+
+Demo react app v3.0
+
+useRef demo 1
+useState demo 1
+
+[displa info]
+
+Footer @ 2025
+
+
+
