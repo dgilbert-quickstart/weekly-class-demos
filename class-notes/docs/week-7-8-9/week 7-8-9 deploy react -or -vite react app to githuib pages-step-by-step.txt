@@ -1,0 +1,126 @@
+week 7-8-9 deploy react app to githuib pages
+------------------------------------------------------
+
+1. install gh-pages
+  from react app goto command terminal
+  enter the command 
+
+  [sudo] npm install -D gh-pages
+
+2. In the package.json file add these lines before "start": "react-scripts start"
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+example after add:
+--------------------
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+3. In the package.json file add this line after "name"
+"homepage": "https://YOUR-GITHUB-USER-NAME.github.io/YOUR-REACT-REPO-NAME",
+
+example: 
+"homepage": "https://dgilbert-quickstart.github.io/react-demo-github-app-1",
+
+4. deploy react app 
+  from react app goto command terminal
+  enter the command 
+
+ [sudo] npm run deploy
+
+you can access your react app at the base url specified
+
+example: 
+https://dgilbert-quickstart.github.io/react-demo-github-app-1
+
+note:
+a gh-pages branch in your repository and your app is deployed 
+(you can check it under Settings -> Pages )
+
+----------------------------------------------------
+Deploy Vite React App to Githu Pages
+----------------------------------------------------
+1. install gh-pages
+  from react app goto command terminal
+  enter the command 
+  [sudo] npm install -D gh-pages
+
+2. In the package.json file add these lines before "build": "vite build",
+"predeploy": "npm run build",
+
+from:
+
+"scripts": {
+"deploy": "gh-pages -d dist",
+}
+
+to:
+
+"scripts": {
+  "deploy": "gh-pages -d dist -r https://github.com/username/repository.git"
+}
+
+
+3. In the vite.config.js file add this line before plugins: [react()],
+base: "https://YOUR-GITHUB-USER-NAME.github.io/YOUR-REACT-REPO-NAME",
+
+example: 
+base: "https://dgilbert-quickstart.github.io/react-demo-github-app-1",
+
+4. deploy react app 
+  from react app goto command terminal
+  enter the command 
+
+ [sudo] npm run deploy
+
+you can access your react app at the base url specified
+
+example: 
+https://dgilbert-quickstart.github.io/react-demo-github-app-1
+
+note:
+a gh-pages branch in your repository and your app is deployed 
+(you can check it under Settings -> Pages )
+
+#################################################
+
+------------------ 
+vite error 
+- windows
+- macos
+------------------ 
+
+@vite gh-pages deployement error
+@vite deploy react app to github pages 
+
+Error: Failed to get remote.origin.url (task must either be run in a git repository with a 
+configured origin remote or must be configured with the "repo" option).
+
+at D:\Class Demos\Weekly Demos\Week 9\React Project\classdemos\classdemoreact\Demo-1\node_modules\gh-pages\lib\git.js:214:13
+
+at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+###########################################
+
+solution:
+--------
+
+from:
+
+"scripts": {
+"deploy": "gh-pages -d dist",
+}
+
+to:
+
+"scripts": {
+  "deploy": "gh-pages -d dist -r https://github.com/username/repository.git"
+}
+

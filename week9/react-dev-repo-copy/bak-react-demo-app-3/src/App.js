@@ -1,16 +1,23 @@
+//import {BrowserRouter, Routes, Route} from "react-router-dom"
+//-- hashrouter - used with GitHub pages 
+import {HashRouter, Routes, Route} from "react-router-dom"
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Page1 from "./components/Page1";
+
 function App() {
   return (
     <>
-            <p>Demo react app v3.0</p>
-            <div>
-              <a href="#">useRef demo 1</a><p></p>
-              <a href="#">useState demo 1</a><p></p>              
-            </div>
-            <div>
-              [displa info]
-            </div>
-            <p>Footer @ 2025</p>
-      </>
+        <HashRouter>
+          <NavBar/>
+          <Routes>      
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/page1" element={<Page1/>}/>
+          </Routes>
+      </HashRouter>        
+    </>
   );
 }
 

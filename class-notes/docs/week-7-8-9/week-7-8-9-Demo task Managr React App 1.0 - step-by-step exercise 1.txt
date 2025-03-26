@@ -1,0 +1,67 @@
+Demo task Managr React App 1.0 - step-by-step exercise 1
+
+1. create a new public react repo ie: taskmgr-app-v01
+2. clone repo
+3. create react app - ie: command terminal
+4. npm install react libraries - ie: vs.code
+5. start react app - ie: vs.code
+6. enter demo text, test live update ie: vs.code
+7. update github ie: vs.code
+8. update app.js to wireframe
+9. update github ie: vs.code
+10. install gh-pages configure and deploy react app to github pages 
+11. add src/componentd/Home.js
+12. update App.js to add Home.js
+13. update github ie: vs.code
+14. deploy react app to github pages ie: npm run build
+15. install react router dom - ie: vs.code
+16. update App.js with HasbRouter and Home route
+17. add src/components/ContactUs.js
+18. update jsx code from wireframe
+19. update App.js to include ContactUs route
+20. update github ie: vs.code
+21. deploy react app to github pages ie: npm run build
+22. create src/components/NavBar.js
+23. update App.js to add NavBar
+24. add Home and ContactUs links to NavBar component
+25. update github ie: vs.code
+26. deploy react app to github pages ie: npm run build
+27. update Home and ContactUs component features and code  
+28. update github ie: vs.code
+29. deploy react app to github pages ie: npm run build
+30. add css style
+31. update github ie: vs.code
+32. deploy react app to github pages ie: npm run build
+
+################################################
+Wireframes
+################################################
+
+Home | About 
+
+Demo Task Management App 1.0
+
+        all / complete / in-complete
+
+________________ add clear
+
+[]  item a  -x-
+[x] item b  -x-
+[x] item c  -x-
+[]  item d  -x-
+
+
+====================================================
+
+Home / Contact Us
+
+Contact Us
+-----------------
+first name: _____________
+last name: _____________
+email: _____________
+comment:
+
+[submtt] [clear]
+
+

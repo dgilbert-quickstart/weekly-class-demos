@@ -12,11 +12,11 @@ Create demo react app 3.0 - step-by-step exercise 1
 10. add src/componentd/Home.js
 11. update App.js to add Home.js
 12. update github ie: vs.code
-13. create linkdemo1 and linkdemo2 functions in App.js
+13. create linkdemo1 and linkdemo2 functions in Home.js
 14. link functions to anchor tags
 15. update github ie: vs.code
-16. install reacr router dom - ie: vs.code
-17. update App.js with HasbRouter and Home route
+16. install react router dom - ie: vs.code
+17. update App.js with HashRouter and Home route
 18. add src/components/About.js
 19. update App.js to include About route
 20. update github ie: vs.code
