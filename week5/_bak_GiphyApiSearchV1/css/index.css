@@ -1,0 +1,62 @@
+.global-center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-footer {
+    text-align: center;
+}
+
+
+.div-scroll-1 {
+    /*desktop, tblet screens*/
+    display: flex; /*adjust screen to any screen size*/
+    width: 500px;
+}
+
+
+.div-scroll-2 {
+    border: 1px solid #000000;
+    width: 400px;
+    height: 200px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+media query - adjust screen based on screen width or height
+*/
+
+/*
+add google font 
+*/
+.h2-style-1 {
+    font-family: "Sofia", sans-serif;
+}
+
+/*
+add scss - css compiler
+*/
+
+/*
+add media query for differtent screen sizes 
+*/
+/*
+@media only screen and (max-width: 450px) {
+*/
+
+/* when screen size is <= 350px - apply css code */
+@media only screen and (max-width: 350px) {
+    
+    /*mobile screen = screen size 350px */
+    .div-scroll-1 {
+        width: 200px;
+        background-color: rgb(109, 100, 160);
+    }
+        
+}
+
+

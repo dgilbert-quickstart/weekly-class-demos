@@ -1,0 +1,36 @@
+/*
+
+https://www.w3schools.com/sass/
+
+scss generates - style1.css
+
+<link to href="/css/style1.css">
+
+- ues to build large nuber of css code 
+- add css and or scss code 
+- scss re-use css code ie: functions in javascript 
+- create variables 
+- create functions 
+- scss also generates backword compatable css code 
+- other 
+
+*/
+
+/*
+variables 
+*/
+
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+.h1-style-2 {
+    color: $textcolor
+}
+
+/*
+
+scss to genrate style1.css 
+
+*/
+
