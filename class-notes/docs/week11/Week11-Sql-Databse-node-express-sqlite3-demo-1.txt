@@ -1,0 +1,195 @@
+## Introduction to SQL
+- https://www.w3schools.com/sql/
+
+##  nodejs sqlite3 CRUD examples 
+- https://coderslegacy.com/javascript-sqlite3-tutorial-for-beginners-node-js/
+- https://medium.com/swlh/creating-a-crud-application-using-node-js-and-sqlite3-a57d4a39ab69
+- https://sqldocs.org/sqlite/sqlite-nodejs/
+- https://www.sqliz.com/posts/javascript-crud-sqlite/
+
+## Introduction to SQL
+- https://www.w3schools.com/sql/
+- Database = file containing structured data ie: table/schema, rows, columns
+- SQL is a standard language for storing, manipulating and retrieving data in databases.
+- SQL - universal/common language/code used to manipulate or retrieve data from a database.
+- Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.
+
+## SQLite = portable text based full featured database
+
+## Structured query language 
+- Create a database to store data
+- create a table structure to save data
+- add, update, delete data using sql command
+- RDBMS - relational management system
+- data can be related and joined
+- ie: MySql, Postgressql, Oracle, Sql Server, Other
+- sqlite - full-featured portable sql text-based database
+
+## SQLite = portable text based full featured database
+- download/install sqlite db browser
+- https://sqlitebrowser.org/dl/
+-** windows: **
+-** DB Browser for SQLite - Standard installer for 64-bit Windows **
+
+<pre>
+<xmp>
+
+--------------------------------------
+DEMO SQL Db Browser db #1
+--------------------------------------
+-- create database "demodb1"
+-- save sqlite db browser session
+-- create new query tabs
+-- rename query tabs
+-- copy and use sqlite database to application
+
+## Database  Create table Summary 
+- table name: contact
+- fields
+-  Type - number, string, blob/object
+-  NN - Not null, must not be null
+-  PK - Primary key - key can not be duplicate , primary key is also unique
+-       used as default data sorting
+-  AI - Auto increment
+-  U - unique - does not be duplicate , primary key is also unique
+-  Default - add defult value when field is empty
+-  Check - additional sql field validation
+
+* create table "user"
+  field:
+    id        int nn pk un
+    username  text nn
+    password  text nn
+
+* insert data
+
+* query data
+ 
+  select id, name, password
+  from user
+  ;
+
+  select *
+  from user
+  limit 2
+  ;
+ 
+
+---------------------------------------
+Database example #2: demo2.db
+---------------------------------------
+-- create database "demodb1"
+-- save sqlite db browser session
+-- create new query tabs
+-- rename query tabs
+-- copy and use sqlite database to application
+
+CREATE TABLE "user" (
+"id" INTEGER NOT NULL UNIQUE,
+"username" TEXT NOT NULL UNIQUE,
+"password" TEXT NOT NULL,
+PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+-----------------------------------------
+SQL Example 
+-----------------------------------------
+
+SELECT *
+FROM user
+;
+
+SELECT id, username, password
+FROM user
+LIMIT 2
+;
+
+SELECT id, username, password
+FROM user
+WHERE username = "user1" and password = "pwd1"
+;
+
+INSERT INTO User(username,password)
+VALUES ("user1","pwd1")
+;
+
+DELETE
+FROM User
+WHERE username = "userone"
+;
+
+=================================================
+= contact table CRUD example #3
+=================================================
+
+---------------------------
+create table SQL code
+---------------------------
+
+CREATE TABLE "contact" (
+  "id"  INTEGER NOT NULL UNIQUE,
+  "name"  TEXT NOT NULL,
+  "email" TEXT NOT NULL,
+  "phone" TEXT,
+  PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+
+> Add sample records
+name    email   	phone
+ann     ann@gmail.com   23923234 
+sam     sam@yahoo.com  
+jan     jan@msn.com     19382933 
+ken     ken@yahoo.com   78349348 
+jon     jon@gmail.com     
+pam     pam@msn.com     32978324 
+
+-----------------------------
+SQL Queries
+-----------------------------
+SELECT
+WHERE
+LIMIT
+
+INSERT
+UPDATE
+DELETE
+
+OTHER
+
+
+### Sqlitdb browser sql code demo
+
+- https://www.w3schools.com/sql/sql_select.asp
+
+--select all row and all columns
+select *
+from contact
+;
+
+--select all row and name snd email columns
+select name,email
+from contact
+;
+
+-- filter rows , display on ly selected row, and selected columns
+SELECT name, email, phone
+FROM contact
+WHERE name='sam';
+
+-- select specific rows and specific columns
+select name,email
+FROM contact
+where id <= 2
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SQlite node js introduction
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+- https://coderslegacy.com/javascript-sqlite3-tutorial-for-beginners-node-js/
+
+- connect to db
+- select data
+- insert data
+

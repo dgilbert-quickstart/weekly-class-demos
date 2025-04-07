@@ -1,0 +1,225 @@
+
+NodeJs Introduction 
+- https://www.w3schools.com/nodejs/
+
+https://nodejs.org/en/download
+- Install nodejs
+
+Create nodejs project
+- Initialize nodejs folder
+- Backend
+- src/index.js
+- npm init -y
+- package.json
+- Install, un-install javascript packages ie: uuid
+- .gitignore
+- node_modules
+- .env
+- update github
+
+Deploy nodejs backend to replit.com 
+
+===================================================
+Node js backend /server side webserver demo #1
+===================================================
+
+1. create webserver folder
+  demo-nodejs-backend-server-1
+
+2. create server index.js file
+  src\index.js
+
+3. server code:
+
+function main()
+{
+  console.log("#Demo-nodejs-backend-server-1.0.0")
+}
+
+main()
+
+4. run server
+  from project root folder enter the following:
+  node src/index.js
+
+
+===================================================
+Node js backend /server side , webserver demo #2
+===================================================
+
+1. create public repository
+
+2. from vs.code clone repo 
+   goto project root folder 
+   goto command terminal 
+   clone repo
+   cd into cloned folder
+
+3. create server index.js file
+  src\index,js
+
+4. server code:
+
+function main()
+{
+  console.log("#Demo-nodejs-backend-server-2.0.0")
+}
+
+main()
+
+5. run server
+  from project root folder enter the following:
+  node src/index.js
+
+6. create a package.json file
+goto project folder before "src"
+
+npm init
+
+## accept all defaults
+or
+npm init -y
+## node will create package.json
+
+note: example package.json 
+
+{
+"name": "demo-backend-app-2",
+"version": "1.0.0",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC",
+"description": ""
+}
+
+7. add .gitignore file
+  from project root folde enter the following in .getignore file
+
+  node_modules
+  .env
+
+8. add a npm javascrupt library
+ example uuid - generate unique id use npm to install uuid javascript library
+ from root project folder goto command line and enter
+
+ npm install uuid
+
+9. update github
+from root project folder 
+goto command terminal 
+git add, commit, push 
+
+10. run server
+  from project root folder enter the following:
+  node src/index.js
+
+===================================================
+Node js/express backend dashboard api demo #1
+===================================================
+
+1. create public repository ie: deshboard-backend-api-app-v1
+
+2. from vs.code clone repo 
+   goto project root folder 
+   goto command terminal 
+   clone repo
+   cd into cloned folder
+
+3. create server index.js file
+  src\index,js
+
+4. server code:
+
+const express = require("express");  
+const cors = require("cors");  
+const app = express();  
+
+/cors allow access to same site or other localhost 
+app.use(cors()) 
+
+//localhost port range - 3000 - 9999
+const SERVER_PORT = 8080; 
+
+app.get("/", (req,res) => {
+    const _msg = "# Demo node express api 1.0.0";
+    console.log(_msg)
+    res.send(_msg)
+});
+
+app.get("/about", (req,res) => {
+    const _msg = "# Demo node express api 1.0.0 - about route";
+    console.log(_msg)
+    res.send(_msg)
+});
+
+app.get("/test1", (req,res) => {
+    const _msg = "# Demo node express api 1.0.0 - test1 route";
+    console.log(_msg)
+    res.send(_msg)
+});
+
+//-other - POST, DELETE, PUT
+
+//-start node exporess web server - ie: live server
+app.listen(SERVER_PORT, ()=>{
+    let _msg = "node express websever running at port: " + SERVER_PORT;
+    console.log(_msg);
+})
+
+5. run server
+  from project root folder enter the following:
+  node src/index.js
+
+6. create a package.json file
+goto project folder before "src"
+npm init
+## accept all defaults
+or
+npm init -y
+## node will create package.json
+
+7. add .gitignore file
+  from project root folde enter the following in .getignore file
+
+  node_modules
+  .env
+
+8. add a npm javascript libraries
+ from root project folder goto command line and enter
+ express - minimal nodejs web server
+ body-parser - converts form post to json
+ cors - allow localhost to make request to other localhost web applications 
+ sqlite3 - javascrpit library to manipulate sqlite3 database 
+
+npm install express body-parser cors sqlite3
+
+9. update github
+from root project folder 
+goto command terminal 
+git add, commit, push 
+
+10. run server 
+
+note: access localhost server from browser
+http://localhost:8080/test1
+
+note: access localhost server fromcommand line
+curl http://localhost/test1
+
+11. deply nodejs express backend server ie: replit.com
+
+login to replit.com
+select replit nodejs project
+copy server file(s) from localhost to replit.com nodejs project
+ie: index.js, test.db3
+start replit.com nodejs app
+
+12. note: access replit.com nodejs server from browser
+http://replit.com-url/test1
+
+note: access replit.com server from command line
+curl http://replit.com-url/test1
+

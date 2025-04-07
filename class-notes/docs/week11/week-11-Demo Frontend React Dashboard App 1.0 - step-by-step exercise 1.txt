@@ -1,0 +1,103 @@
+-------------------------------------------------------------------
+Demo Frontend React Dashboard App 1.0 - step-by-step exercise 1
+-------------------------------------------------------------------
+
+1. create a new public react repo ie: dashboard-app-v01
+2. from command terminal at root project folder
+3. clone repo
+4. create react app - ie: create-react-app, yarn or vite 
+5. from vs.code go to newly created react app 
+6. goto command terminal 
+7. npm install react libraries 
+8. start react app  
+9. enter demo text, test live update, preview website 
+10. update App.js to wireframe 
+11. update github 
+12. install gh-pages and configure gh-pages 
+    ie: package.json , homepage, scripts, deploy, predeploy 
+13. install react router dom 
+14. add src/componentd/Home.js
+15. update jsx code from wireframe
+16. update App.js to add Home.js
+17. update App.js with HashRouter and Home route
+18. update github 
+19. deploy react app to github pages ie: npm run build
+20. add src/componentd/Login.js
+21. update jsx code from wireframe
+22. update App.js to add Login.js
+23. update github ie: 
+24. deploy react app to github pages ie: npm run build
+25. add src/components/Register.js
+26. update jsx code from wireframe
+27. update App.js Regiater route
+28. update github  
+20. deploy react app to github pages ie: npm run build
+30. add src/components/Dashboard.js
+31. update jsx code from wireframe
+32. update App.js with HashRouter and Dashboard route
+33. update github ie: vs.code
+34. deploy react app to github pages ie: npm run build
+35. add css style
+36. update github ie: vs.code
+37. deploy react app to github pages ie: npm run build
+or 
+Manually deploy React app to "gh-pages" branch 
+
+################################################
+Wireframes
+################################################
+
+====================Home================================
+
+Dashboard App v1.0
+
+Login 
+Register
+
+
+====================Login================================
+
+Login 
+
+Username
+Password
+[login]
+
+register
+
+=====================Register===============================
+
+Register 
+
+Username
+Password
+Confirm Password
+
+[login]
+
+===================dsshboard=================================
+
+App Name Username [logout]
+
+Category 1
+Category 2
+Category 3 Category question [ about ]
+Category 4
+Category 5
+
+
+================================================================
+Manually deploy react app to github pages 
+================================================================
+
+Run react app locally
+Build your react app
+Create a new repository 
+Create a "gh-pages" branch
+Upload your react app build file to the "gh-pages" branch
+You should be able to preview your app at the github pages repository url
+Update your project submit 
+Add react app repository code 
+Add react app github pages repository
+Submit project
+
