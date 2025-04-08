@@ -23,7 +23,7 @@
 - RDBMS - relational management system
 - data can be related and joined
 - ie: MySql, Postgressql, Oracle, Sql Server, Other
-- sqlite - full-featured portable sql text-based database
+- sqlite - full-featured portable sql text-based database	
 
 ## SQLite = portable text based full featured database
 - download/install sqlite db browser
@@ -119,7 +119,42 @@ WHERE username = "userone"
 ;
 
 =================================================
-= contact table CRUD example #3
+product CRUD example #2
+=================================================
+
+product
+ id    primary key
+ name  string not null
+ date  string null
+ price numeric not null
+
+
+name, date, price
+item1, 5/1/21, 112.32
+item2, 1/5/21, 312.42
+itema, 1/20/22, 89.36
+itemb, 12/5/23, 238.23
+itemc, 8/10/23, 73.2
+itemd, 11/10/24, 52.36
+
+-----------------------------
+SQL Queries
+-----------------------------
+- create table 
+= add update delete data
+- query data
+
+SELECT
+WHERE
+LIMIT
+
+INSERT
+UPDATE
+DELETE
+
+
+=================================================
+= contact table CRUD example #4
 =================================================
 
 ---------------------------
@@ -135,7 +170,6 @@ CREATE TABLE "contact" (
 );
 
 
-> Add sample records
 name    email   	phone
 ann     ann@gmail.com   23923234 
 sam     sam@yahoo.com  
@@ -147,6 +181,10 @@ pam     pam@msn.com     32978324
 -----------------------------
 SQL Queries
 -----------------------------
+- create table 
+= add update delete data
+- query data
+
 SELECT
 WHERE
 LIMIT
