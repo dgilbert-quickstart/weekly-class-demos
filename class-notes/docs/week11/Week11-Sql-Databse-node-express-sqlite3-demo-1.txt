@@ -119,6 +119,147 @@ WHERE username = "userone"
 ;
 
 =================================================
+- Class exercise demo - create dashboard database 
+=================================================
+
+#SQL Query demo #1
+- create a database ie: dasbboard
+- create table : user 
+  - id integer not null autoincrement unique primary key
+  - username text not null unique  
+  - password text not null 
+
+<pre>
+<xmp>
+CREATE TABLE "user" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"username"	TEXT NOT NULL UNIQUE,
+	"password"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+</xmp>
+</pre>
+
+### Query data - ie: login page 
+  - sql code - select , where and 
+
+<pre>
+<xmp>
+/*
+sql demo #1 - get all users 
+- display all columns 
+- display all rows 
+ note: not reccomended ie: 1mil+ rows, quiry timeout
+*/
+select *
+from user
+
+---------------------------
+
+/*
+sql demo #2 - get all users 
+- display all columns 
+- display all rows 
+ note: not reccomended ie: 1mil+ rows, quiry timeout
+ use limit [number of rows]
+ */
+select *
+from user
+limit 10
+
+---------------------------
+
+/*
+sql demo #3 - get all users 
+- display username and password
+- display all rows 
+ note: not reccomended ie: 1mil+ rows, quiry timeout
+ use limit [number of rows]
+ */
+select username, password
+from user
+limit 10
+
+
+-------------------------
+
+/*
+sql demo #4 - get all users ie: login page 
+- display username and password
+- display specified username and pasword
+ note: not reccomended ie: 1mil+ rows, quiry timeout
+ use limit [number of rows]
+ */
+select username, password
+from user
+where username = "userone"
+and password = "pwd1"
+limit 10
+
+--------------------------------
+
+
+</xmp>
+</pre>
+
+### add sampe data - ui and sql code - ie: register page
+  - insert new data - ui and sql code
+  - insert into 
+
+<pre>
+<xmp>
+</xmp>
+</pre>
+
+### review sql update, delete 
+
+
+<pre>
+<xmp>
+/*
+display all users
+select/retrieve all columns
+select/retrieve all rows
+*/
+select *
+from user
+
+------------------------------
+
+/*
+display all users
+select/retrieve username, password
+select/retrieve all rows
+*/
+select username, password
+from user
+;
+
+------------------------------
+
+/*
+display all users
+select/retrieve username, password
+select/retrieve a specified row
+*/
+select username, password, updateddate
+from user
+where username = "userone"
+and password = "pwd1"
+;
+
+
+
+------------------------------
+
+
+------------------------------
+
+
+</xmp>
+</pre>
+
+=================================================
 product CRUD example #2
 =================================================
 
@@ -230,4 +371,73 @@ SQlite node js introduction
 - connect to db
 - select data
 - insert data
+
+#################################################
+
+1. create a repo and clone repo 
+or create a project folder ie: sqlite3-demo-app-1
+
+2. from vs.code project command line 
+initialize git 
+npm init -y 
+
+3. install sqlite3 npm package
+
+[sudo] npm install sqlite3
+
+4. create .gitignore file ie:
+  node_modules
+
+5. create folder src/data
+ - copy your database file to data folder ie: demodb1.db, dashboard.db
+
+6. create file src/index.js and enter the following code 
+
+//https://coderslegacy.com/javascript-sqlite3-tutorial-for-beginners-node-js/
+
+const sqlite3 = require('sqlite3').verbose();
+
+//windwos or macos or linux 
+//let _dbname = `src\\data\\demodb1.db`
+let _dbname = "src\\data\\dashboard.db"
+
+//macos, linux os 
+//let _dbname = "src/data/demodb1.db"
+//let _dbname = "src/data/dashboard.db"
+
+let db = new sqlite3.Database(_dbname, sqlite3.OPEN_READWRITE, (err) => {
+  if (err) {
+    return console.error(err.message);
+  }
+  console.log('Connected successfully.');
+});
+
+//insert row 
+insert_query = "INSERT INTO user(username, password) VALUES(?, ?)"
+values = ["usersix", "pwd6"]
+//db.run(insert_query, values)
+
+//returns all rows 
+db.all("SELECT * FROM user", [], (err, rows) => {
+    console.log(rows)
+})
+
+//returns first row
+//db.get("SELECT * FROM user", [], (err, row) => {
+db.get("SELECT * FROM user where username=? and password=?", ["userfour","pwd4"], (err, row) => {
+    if (err) {
+        throw err; 
+    }
+    console.log(row);
+});
+
+
+7. run code 
+  from root project folder enter 
+  node src/index.js
+
+8. update gihub
+  -- from cloned  project folder
+  -- git add, commit, push
+ 
 
